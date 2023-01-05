@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel='stylesheet' href='./assets/css/wizard-printer.css'>
+    <title>Printer</title>
+</head>
+<body>
+    <!-- header part start here -->
+    <header>
+        <!-- desktop header start here -->
+        <div class="header-part d-none d-lg-block desktop-header">
+            <div class="container">
+                <div class="header-cart-part">
+                    <div class="logo-part">
+                        <img src="./assets/images/logo-lg.png" alt="logo" />
+                    </div>
+                    <div class="search-part">
+                        <form class="d-flex">
+                            <input class="form-control me-2" placeholder="Search" aria-label="Search">
+                            <div class="search-icon">
+                                <img src="./assets/images/search.png" alt="search-icon">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="item-part">
+                        <a href="#">Consumibles</a>
+                        <a href="#">Impresoras</a>
+                    </div>
+                    <div class="left-part">
+                        <div class="image-part">
+                            <img src="./assets/images/free-delivery.png" alt="free-delivery" />
+                        </div>
+                        <div class="text-part">
+                            <p>Remaining to free delivery</p>
+                            <strong>$500.00</strong>
+                        </div>
+                    </div>
+                    <div class="user-cart-part">
+                        <div class="user">
+                            <img src="./assets/images/user.png" alt="user-icon">
+                        </div>
+                        <div class="cart-part">
+                            <div class="cart-icon">
+                                <img src="./assets/images/cart.png" alt="cart-icon">
+                                <div class="cart-no">2</div>
+                            </div>
+                            <h6>258 €</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--mobile header start here  -->
+        <div class="header-mobile d-lg-none">
+            <div class='container'>
+                <div class='header-mobile-top'>
+                    <div class='header-cart-part'>
+                        <div class='logo-part'>
+                            <img src="./assets/images/logo-lg.png" alt="logo" />
+                        </div>
+                    </div>
+                    <div class="user-cart-part">
+                        <div class="search-icon">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent2"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <img src="./assets/images/search.png" alt="search-icon"></button>
+                        </div>
+                        <div class="user">
+                            <img src="./assets/images/user.png" alt="user-icon">
+                        </div>
+                        <div class="cart-part">
+                            <div class="cart-icon">
+                                <img src="./assets/images/cart.png" alt="cart-icon">
+                                <div class="cart-no">2</div>
+                            </div>
+                        </div>
+                    </div>
+                    <nav class='navbar'>
+                        <div class='insider-block'>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                        </div>
+                    </nav>
+                </div>
+                <!-- search box for header -->
+                <div class='collapse navbar-collapse-2' id="navbarSupportedContent2">
+                    <div class='search-box-part'>
+                        <div class='input-part'>
+                            <input type='text' name='search' id='search'>
+                            <label for='search'><img alt='search' src="./assets/images/search.png" /></label>
+                        </div>
+                    </div>
+                </div>
+                <!-- drawer -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="drawer-overlay" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    </div>
+                    <div class='drawer'>
+                        <div class='sidebar-top-part'>
+                            <div class='container-fluid'>
+                                <div class='container-sidebar-insider'>
+                                    <div class="left-part">
+                                        <div class="image-part">
+                                            <img src="./assets/images/free-delivery.png" alt="free-delivery" />
+                                        </div>
+                                        <div class="text-part">
+                                            <p>Remaining to free delivery</p>
+                                            <strong>$500.00</strong>
+                                        </div>
+                                    </div>
+                                    <div class='close-btn-part'>
+                                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#navbarSupportedContent"
+                                            aria-controls="navbarSupportedContent" aria-expanded="false"
+                                            aria-label="Toggle navigation">
+                                            <img src='./assets/images/header/close.png' alt='close-icon'>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='content-part'>
+                            <div class="item-part">
+                                <a href="#">Consumibles</a>
+                                <a href="#">Impresoras</a>
+                            </div>
+                            <div class='customer-details-part'>
+                                <ul class="customer-link-part">
+                                    <li class="customer-link">
+                                        <a href="#" title="my-request">Mis solicitudes <span class="badge">3</span></a>
+                                    </li>
+                                    <li class="customer-link">
+                                        <a href="#" title="communications">Comunicados <span class="badge">3</span></a>
+                                    </li>
+                                    <li class="customer-link">
+                                        <a href="#" title="client-area">Área Cliente</a>
+                                    </li>
+                                    <li class="customer-link">
+                                        <a href="#" title="profile">Roger Pujol</a>
+                                    </li>
+                                    <li class="customer-link">
+                                        <a href="#" title="profile">cerrar sesión</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- main-content part start here -->
+    <main class="wizard-printer-page">
+        <div class='container'>
+            <div class='content-part'>
+                <div class='title-block'>
+                    <h3 class='title-text'>Asistente para comprar una impresora</h3>
+                    <div class='buy-now'>
+                        <button class='buy-btn'>Back</button>
+                    </div>
+                </div>
+                <div class='printer-block'>
+                    <div class='printer-part'>
+                        <div class='name-block'>
+                            <span></span>
+                            <h5>Impresión a 1 cara</h5>
+                        </div>
+                        <div class='image-block'>
+                            <img src='./assets/images/wizard-printer/printer-1.png' alt='printer'>
+                        </div>
+                    </div>
+                    <div class='details-part'>
+                        <div class='details'>
+                            <h5>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi magni impedit beatae, voluptates illum aliquam, laborum quia a fuga neque saepe ad rem amet quas nostrum tenetur veniam accusantium adipisci!</h5>
+                        </div>
+                        <div class='buy-now mt-3'>
+                            <button class='buy-btn'>Next</button>
+                        </div>
+                    </div>
+                </div>
+                <div class='printer-block'>
+                    <div class='printer-part'>
+                        <div class='name-block'>
+                            <span></span>
+                            <h5>Impresión a 2 cara</h5>
+                        </div>
+                        <div class='image-block'>
+                            <img src='./assets/images/wizard-printer/printer-2.png' alt='printer'>
+                        </div>
+                    </div>
+                    <div class='details-part'>
+                        <div class='details'>
+                            <h5>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi magni impedit beatae, voluptates illum aliquam, laborum quia a fuga neque saepe ad rem amet quas nostrum tenetur veniam accusantium adipisci!</h5>
+                        </div>
+                        <div class='buy-now mt-3'>
+                            <button class='buy-btn'>Next</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- footer start here -->
+    <footer class="footer-part">
+        <div class="footer-head newsletter-part">
+            <div class="container">
+                <div class="row">Somos distribuidor autorizado de Evolis, epsecializado en impresoras de tarjetas de PVC
+                </div>
+            </div>
+        </div>
+        <div class="content-part">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-md-5 col-sm-12">
+                        <div class="footer-left-section">
+                            <div class="logo-size">
+                                <img src="./assets/images/logo-lg.png" alt="logo">
+                            </div>
+                            <div class="right-part-helpline">
+                                <div class="right-part-helpline-content">
+                                    <img src="./assets/images/footer/helpline-icon.png" alt="helpline-logo" />
+                                    <div class="contact-no-css">
+                                        <div class="font-size">Contact-Information</div>
+                                        <div class="font-size-contact-no"><a href="">(+34)616 43 28 05</a></div>
+                                    </div>
+
+                                </div>
+                                <div>
+                                    <div class="font-size-location">Location</div>
+                                    <div class="font-size">England ,Europe</div>
+                                </div>
+                                <div class='right-upper-sec'>
+                                    <div class='sm-icon'>
+                                        <a href='#'>
+                                            <div class='facebook common-icon-css'></div>
+                                        </a>
+                                    </div>
+                                    <div class='sm-icon'>
+                                        <a href='#'>
+                                            <div class='instagram common-icon-css'></div>
+                                        </a>
+                                    </div>
+                                    <div class='sm-icon'>
+                                        <a href='#'>
+                                            <div class='linkdein common-icon-css'></div>
+                                        </a>
+                                    </div>
+                                    <div class='sm-icon'>
+                                        <a href='#'>
+                                            <div class='twiter  common-icon-css'></div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-md-7 col-sm-12">
+                        <div class="footer-right-section">
+                            <div class="row">
+                                <div class=" col-lg-4 col-md-4 col-sm-6 ">
+                                    <div class="first-part">
+                                        <div class="text-heading">Acceso rapido</div>
+                                        <div class="text-div">
+                                            <div class="font-size text-padding"><a href="#">Impresoras</a></div>
+                                            <div class="font-size text-padding"><a href="#">Cintas</a></div>
+                                            <div class="font-size text-padding"><a href="#">Kits de</a></div>
+                                            <div class="font-size text-padding"><a href="#">Tarjetas</a></div>
+                                            <div class="font-size text-padding"><a href="#">Accesorios</a></div>
+                                            <div class="font-size text-padding"><a href="#">Pads</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-6 secondd-part">
+                                    <div class="secondd-part">
+                                        <div class="text-heading">Information</div>
+                                        <div class="text-div">
+                                            <div class="font-size text-padding"><a href="#">Impresoras</a></div>
+                                            <div class="font-size text-padding"><a href="#">Cintas</a></div>
+                                            <div class="font-size text-padding"><a href="#">Kits de</a></div>
+                                            <div class="font-size text-padding"><a href="#">Tarjetas Cintas</a></div>
+                                            <div class="font-size text-padding"><a href="#">Accesorios Cintas</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-6">
+                                    <div class="third-part">
+                                        <div class="text-heading">Others-Information</div>
+                                        <div class="text-div">
+                                            <div class="font-size text-padding"><a href="#">Impresoras</a></div>
+                                            <div class="font-size text-padding"><a href="#">Impresoras</a></div>
+                                            <div class="font-size text-padding "><a href="#">Cintas</a></div>
+                                            <div class="font-size text-padding"><a href="#">Kits de</a></div>
+                                            <div class="font-size text-padding"><a href="#">Tarjetas</a></div>
+                                            <div class="font-size text-padding"><a href="#">Tarjetas-Kits de</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lower-section">
+                <div class="container section-width">
+                    <div class="footer-right-txt">
+                        <div class=" font-size">@ 2022 </div>
+                        <div class="font-size-copyright">Company-name</div>
+                        <div class=" font-size-company">CopyRight</div>
+                    </div>
+                    <div class="footer-left-txt">
+                        <div class="logo-size"> <img src="./assets/images/footer/visa-card.png" alt="visa-card" /></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="./assets/js/custom.js"></script>
+</body>
+
+</html>

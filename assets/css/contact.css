@@ -1,0 +1,295 @@
+.contact-page .content-part {
+    margin: auto;
+}
+
+
+.content-part .top-part .header-part {
+    display: flex;
+    flex: 1 1 auto;
+    background-color: var(--green);
+    padding: 12px;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 500;
+    color: white;
+    border-radius: 5px 5px 0 0;
+    border-bottom: 1px solid lightgray;
+}
+
+.content-part .top-part .form-part {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+}
+
+
+.content-part .form-part .condition {
+    margin-bottom: 1rem;
+}
+
+.content-part .form-part .form-group {
+    display: block;
+    padding: 5px 2px 5px 4px;
+    width: 98%;
+}
+
+.content-part .form-part .form-group input {
+    padding: 0;
+    height: initial;
+    width: initial;
+    margin-bottom: 0;
+    display: none;
+    cursor: pointer;
+}
+
+.content-part .form-part.form-group label {
+    position: relative;
+    cursor: pointer;
+    font-size: 14px;
+    opacity: 0.8;
+    color: var(--black);
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.top-part .form-part .name-section {
+    display: flex;
+    flex: 1 1 auto;
+}
+
+.top-part .form-part .two-input-section {
+    display: flex;
+    gap: 15px;
+    flex: 1 1 auto;
+}
+
+.form-part .two-input-section .email-section {
+    display: flex;
+    flex: 1;
+}
+
+.form-part .two-input-section .telephone-section {
+    display: flex;
+    flex: 1;
+}
+
+.form-part .submit-section {
+    display: flex;
+    flex: 1 1 auto;
+    gap: 15px;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+    flex-direction: column;
+}
+
+.form-part .radio-btn {
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
+    flex-direction: column;
+}
+
+.form-group {
+
+    border-bottom: 0px;
+
+}
+
+.address-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.submit-section .buy-now {
+    display: flex;
+    width: 30%;
+}
+
+.form-group label {
+    white-space: nowrap;
+}
+
+.submit-section .condition .terms-condition {
+    color: #000000;
+}
+
+.submit-section .buy-now .buy-btn {
+    padding: 10px 6px;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 500;
+    color: var(--white);
+    outline: none;
+    border: none;
+    border-radius: 21px;
+    width: 70%;
+    background-color: var(--green);
+    transition: background .25s ease-in-out, color .25s ease-in-out, border .25s ease-in-out;
+}
+
+.submit-section .buy-now .buy-btn:hover {
+    background-color: #333E48;
+}
+
+.address-content-block {
+    display: flex;
+    justify-content: space-between;
+    /* margin-top: 1.5rem; */
+    flex-direction: column;
+}
+
+.address-block {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    align-items: flex-start;
+}
+
+
+.address-content-block .address-block p {
+    margin-bottom: 0;
+}
+
+.address-content-block .address-block p.office-name {
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    margin-bottom: 0px
+}
+
+.address-content-block .right-upper-sec p.office-name {
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    margin-bottom: 0px;
+}
+
+.address-content-block .address-block p.office-number {
+    font-weight: 400;
+    color: gray;
+    font-size: 13px;
+    margin: 0px 0;
+}
+
+.address-content-block .address-block p.office-time {
+    font-weight: 400;
+    color: gray;
+    font-size: 12px;
+    margin: 4px 0;
+    display: flex;
+    align-items: center;
+}
+.address-content-block .address-block p.office-time img{
+    width: 4%;
+}
+
+.address-content-block .phone-link-part {
+    text-align: right;
+    font-weight: 400;
+    color: gray;
+    font-size: 13px;
+    margin: 0px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.address-content-block .phone-link-part .link-part .mail {
+    color: gray;
+    text-decoration: none;
+}
+
+.address-content-block .phone-link-part .link-part a {
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--green);
+    text-decoration: underline;
+}
+
+.address-content-block .phone-link-part .phone-number a {
+    color: gray;
+    text-align: right;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.map-part iframe {
+    width: 100%;
+}
+
+.contact-page .right-upper-sec {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+
+.contact-page .right-upper-sec .sm-icon {
+    margin-right: 6px;
+}
+
+.contact-page .right-upper-sec .sm-icon .facebook {
+    background-image: url('../images/footer/facebook.svg');
+
+}
+
+.contact-page .right-upper-sec .sm-icon .instagram {
+    background-image: url('../images/footer/instagram.svg');
+}
+
+.contact-page .right-upper-sec .sm-icon .linkdein {
+    background-image: url('../images/footer/linkdein.svg');
+}
+
+.contact-page .right-upper-sec .sm-icon .twiter {
+    background-image: url('../images/footer/twiter.svg');
+}
+
+.contact-page .right-upper-sec .sm-icon .common-icon-css {
+    height: 25px;
+    width: 25px;
+    transition: 1ms;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.contact-page .right-upper-sec .sm-icon .facebook:hover {
+    background-image: url('../images/footer/facebook-hover.svg');
+}
+
+.contact-page .right-upper-sec .sm-icon .instagram:hover {
+    background-image: url('../images/footer/instagram-hover.svg');
+}
+
+.contact-page .right-upper-sec .sm-icon .linkdein:hover {
+    background-image: url('../images/footer/linkdein-hover.svg');
+}
+
+.contact-page .right-upper-sec .sm-icon .twiter:hover {
+    background-image: url('../images/footer/twiter-hover.svg');
+}
+
+.contact-page .right-upper-sec .icons-group {
+    display: flex;
+}
+
+.card-printer-section .location-part {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-printer-section .card-title-style {
+    border-bottom: 1px solid rgb(225, 225, 225);
+    width: 70%;
+}
+
+@media screen and (max-width: 560px) {
+    .form-group label {
+        white-space: inherit;
+    }
+    .map-part iframe {
+        margin-top: 2rem;
+    }
+}

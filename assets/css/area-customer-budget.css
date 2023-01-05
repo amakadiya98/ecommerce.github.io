@@ -1,0 +1,174 @@
+
+
+/* content-block css start */
+.area-customer-page .heading-block {
+    display: flex;
+    /* padding-left: 10px; */
+    margin-top: 2rem;
+    margin-bottom: 10px;
+}
+.heading-block .section-title-block {
+    width: 100%;
+}
+.area-customer-page .table-block {
+    display: flex;
+    flex: 1 1 auto;
+    border-top: 0px solid lightgray;
+    margin-top: -30px;
+}
+.table-block .table-responsive {
+    width: 100%;
+}
+.table-block .table th {
+    font-size: 12px;
+    text-align: center;
+    font-weight: 500;
+    padding: 5px;
+    background-color: var(--green);
+    color: var(--white);
+}
+.table-block .table th:last-child, .table-block .table td:last-child{
+    text-align: right;
+}
+.table-block .table td {
+    font-size: 11px;
+    font-weight: 400;
+    text-align: left;
+    padding: 5px;
+    vertical-align: middle;
+}
+.table-block .table td.price{
+    font-weight: 500;
+}
+.table-block .table td.align-center{
+    text-align: center;
+}
+.table-block .table td i{
+    color: var(--green);
+    font-size: 13px;
+    font-weight: 600;
+}
+.table-block .table td a{
+    text-decoration: none;
+    color: var(--green);
+}
+.table-block .table td p{
+    margin-bottom: 0;
+}
+.table-block .table .bigCol {
+    width: 40%;
+}
+.table-block .table th button,
+.table-block .table td button {
+    all: unset;
+    cursor: pointer;
+}
+.table-block .table td img {
+    height: 18px;
+    width: 18px;
+} 
+.table-block .table .singleColOnRow, .table-striped>tbody>tr.singleColOnRow:nth-of-type(odd)>*, .table-striped>tbody>tr.singleColOnRow:nth-of-type(even)>*{
+    text-align: left !important;
+    padding-left: 28px;
+    color: var(--black);
+    text-align: left;
+    background-color: hsl(0, 1%, 80%);
+}
+.single-row td{
+    background-color: hsl(0, 1%, 80%) !important;
+    --bs-table-accent-bg: hsl(0, 1%, 80%) !important;
+}
+.single-row{
+    background-color: hsl(0, 1%, 80%) !important;
+}
+.table-striped>tbody>tr.single-row{
+    background-color: hsl(0, 1%, 80%);
+}
+.table-block .table .totalCol {
+    text-align: right;
+    padding-right: 10px;
+}
+.table-block .table .bigColLeftText {
+    text-align: left;
+    padding-left: 25px;
+}
+.area-customer-page .pagination-block {
+    display: flex;
+    flex: 1 1 auto;
+    /* margin: 0 10px; */
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3.5rem;
+}
+.pagination-block .page-no {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    height: 35px;
+    min-height: 35px;
+    max-height: 35px;
+}
+.pagination-block .page-no ul {
+    margin: 0;
+}
+.pagination-block .total-no {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    height: 35px;
+    min-height: 35px;
+    max-height: 35px;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+}
+.pagination-block .total-no button {
+    all: unset;
+    cursor: pointer;
+}
+.pagination-block .total-no img {
+    width: 10px;
+    height: 10px;
+    transform: rotate(180deg);
+    margin-inline-end: 8px;
+}
+.pagination-block .total-no .label-span {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+}
+.pagination-block .total-no .count-span {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 300;
+    color: var(--green);
+    margin-inline-start: 5px;
+}
+.pagination-block .page-no .page-link {
+    color: var(--black);
+}
+.pagination-block .page-no .cus-active {
+    background-color: var(--green);
+    color: var(--white);
+}
+.pagination-block .page-no .no-style {
+    border: 0;
+    background-color: transparent;
+    color: var(--black);
+}
+
+
+.buy-btn {
+    padding: 10px 0;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 500;
+    color: var(--white);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    background-color: var(--green);
+    transition: background .25s ease-in-out, color .25s ease-in-out, border .25s ease-in-out;
+}

@@ -1,0 +1,187 @@
+.category-product-part .product-grid{
+   width: 20%;
+}
+.category-product-part .category-part .section-title{
+    font-size: 18px;
+    font-weight: 500;
+}
+.category-part .cat-card{
+    box-shadow: 0 2px 25px 0 hsl(0deg 0% 43% / 12%);
+    margin-bottom: 1rem;
+    padding: 12px 12px;
+    border-radius: 12px;
+}
+.content-link-part{
+    margin-top: -28px;
+}
+.content-link-part .link-list{
+    padding: 0 0 0 4px;
+    list-style-type: none;
+    padding-top: 4px;
+}
+.content-link-part .link-list .link-name{
+    border-bottom: 1px solid  lightgray;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    width: 97%;
+}
+
+.content-link-part .link-list .link-name:last-child{
+    border-bottom: 0;
+}
+.content-link-part .link-list .link-name .link{ 
+    font-size: 14px;
+    opacity: 0.8;
+    color: var(--black);
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.content-link-part .link-list .link-name .link.accordion-active{
+    font-weight: 600;
+    padding-left: 0px;
+    /* border-bottom: 1px solid lightgray; */
+    /* padding-bottom: 6px; */
+}
+.content-link-part .link-list .link-name .link.collapsed{
+    font-size: 14px;
+    opacity: 0.8;
+    color: var(--black);
+    text-decoration: none;
+    font-weight: 300;
+    padding-left: 0px;
+    border-bottom: 0px;
+    padding-bottom: 0px;
+}
+.content-link-part .link-list .link-name:hover{
+    /* background-color: #d3d3d345; */
+}
+.content-link-part .link-list .link-name:hover .link{
+    opacity: 1;
+    color: #000;
+}
+.content-link-part .link-list .link-name.accordion-link-name:hover .link{
+    color: initial;
+    opacity: initial;
+}
+.accordion-button{
+    padding: 0;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    border: 0;
+}
+.accordion-item{
+    border: 0;
+    background-color: transparent !important;
+}
+.accordion-body{
+    padding: 4px 0 0 10px;
+}
+.accordion-body .inner-link .link-list .link-name{
+    border-bottom: 0;
+    padding-top: 0;
+}
+.accordion-body .inner-link .link-list{
+    border-top: 1px solid lightgray;
+    margin-left: -10px;
+    margin-top: 4px;
+    padding: 8px 0 0 20px;
+}
+.accordion-button:not(.collapsed)::after{
+    transform: rotate(0deg);
+    filter: brightness(0.1);
+    margin-top: -8px;
+}
+.accordion-button::after{
+    transform: rotate(-90deg);
+    background-size: 65%;
+    background-position: bottom;
+}
+
+/* checkbox part */
+.checkbox-part{
+    padding-bottom: 0.3rem;
+}
+
+.form-group {
+    display: block;
+    padding: 5px 2px 5px 4px;
+    border-bottom: 1px solid lightgray;
+    width: 98%;
+  }
+  .form-group:last-child{
+    border-bottom: 0;
+  }
+  
+  .form-group input {
+    padding: 0;
+    height: initial;
+    width: initial;
+    margin-bottom: 0;
+    display: none;
+    cursor: pointer;
+  }
+  
+  .form-group label {
+    position: relative;
+    cursor: pointer;
+    font-size: 14px;
+    opacity: 0.8;
+    color: var(--black);
+    text-decoration: none;
+    font-weight: 300;
+  }
+  
+  .form-group label:before {
+    content: '';
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: 1px solid lightgray;
+    padding: 7px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-right: 8px;
+    top: -2px;
+}
+  
+  .form-group input:checked + label:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 6px;
+    width: 5px;
+    height: 12px;
+    border: solid var(--green);
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+.form-group input:checked + label:before{
+    border: 1px solid var(--black);
+}
+@media screen and (max-width:1024px) {
+    .category-product-part .product-grid{
+        width: 33%;
+    }
+    .card-printer-section .card-printer-part .product-grid:nth-child(3n+3) .product::after, .category-product-part .card-printer-section .card-printer-part .product-grid:nth-child(6) .product::after{
+        display: none;
+    }
+    .card-printer-section .card-printer-part .product-grid .product::after,
+    .category-product-part .card-printer-section .card-printer-part .product-grid:nth-child(4) .product::after,
+    .category-product-part .card-printer-section .card-printer-part .product-grid:nth-child(5) .product::after{
+        display: block;
+    }
+}
+@media screen and (max-width:991px){
+    .category-product-part .product-grid{
+        width: 50%;
+    }
+    .card-printer-section .card-printer-part .product-grid:nth-child(2n+2) .product::after, .category-product-part .card-printer-section .card-printer-part .product-grid:nth-child(4) .product::after{
+        display: none;
+    }
+    .card-printer-section .card-printer-part .product-grid:nth-child(3n+3) .product::after{
+        display: block;
+    }
+}

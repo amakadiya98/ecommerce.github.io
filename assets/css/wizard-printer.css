@@ -1,0 +1,539 @@
+.wizard-printer-page {
+    padding: 40px 0;
+}
+
+.wizard-printer-page .content-part {
+    width: 100%;
+    margin: auto;
+    padding: 0 25px;
+}
+
+.content-part .title-block {
+    width: 70%;
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom: 1px solid lightgray;
+}
+
+.title-block .title-text {
+    font-size: 22px;
+    font-weight: 400;
+    margin: 0;
+    padding-left: 15px;
+    position: relative;
+    margin-inline-end: 15px;
+}
+
+.title-block .title-text::after {
+    content: '';
+    position: absolute;
+    bottom: -22px;
+    left: 0;
+    background-color: var(--green);
+    height: 2px;
+    width: 45%;
+}
+
+.title-block .buy-now {
+    width: 25%;
+    margin: 0;
+}
+
+.content-part .printer-block {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    position: relative;
+    margin-top: 3rem;
+    height: 250px;
+}
+
+.content-part .printer-block::after {
+    content: '';
+    display: inline;
+    position: absolute;
+    left: 15%;
+    bottom: 0;
+    height: 1px;
+    background-color: lightgray;
+    width: 50%;
+}
+.content-part .printer-block:last-child:after {
+    display: none;
+}
+.printer-block .printer-part {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 100%;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.printer-block .printer-part .name-block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 50px;
+    margin-bottom: 2rem;
+}
+.printer-block .printer-part .name-block span {
+    width: 5px;
+    height: 5px;
+    background-color: var(--black);
+    margin-inline-end: 15px;
+}
+.printer-block .printer-part .name-block h5 {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+}
+.printer-block .printer-part .image-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 85px;
+}
+.printer-block .printer-part .image-block img {
+    width: 80px;
+    height: 60px;
+}
+.printer-block .details-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+.printer-block .details-part .details {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.printer-block .details-part .details h5 {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+}
+.printer-block .details-part .buy-now {
+    width: 80%;
+}
+.content-part .selected-item-block {
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+    margin-top: 2rem;
+    padding-left: 35px;
+    position: relative;
+    margin-bottom: 50px;
+}
+.content-part .selected-item-block h5 {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0;
+}
+.content-part .selected-item-block::after {
+    content: '';
+    display: inline;
+    width: 45%;
+    position: absolute;
+    left: 10%;
+    bottom: -20px;
+    height: 1px;
+    background-color: lightgray;
+    opacity: 0.8;
+}
+.content-part .selected-item-block .label-div {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.content-part .selected-item-block .label-div span {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0;
+}
+.content-part .selected-item-block .value-div {
+    display: flex;
+    flex: 4;
+    margin-left: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.content-part .select-printer-type {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.select-printer-type .printing-style {
+    width: 100%;
+    display: flex;
+    padding: 0 80px;
+    flex-direction: column; 
+    position: relative;
+    margin-top: 2rem;
+    height: 200px;
+}
+.select-printer-type .printing-style .style-details {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.select-printer-type .buy-now {
+    display: flex;
+    width: 40%;
+    align-items: flex-end;
+    justify-content: flex-end;
+    position: absolute;
+    right: 50px;
+    top: 35px;
+}
+.select-printer-type .printing-style .style-details {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.select-printer-type .printing-style .style-details span {
+    width: 5px;
+    height: 5px;
+    background-color: var(--black);
+    margin-inline-end: 15px;
+}
+.select-printer-type .printing-style .style-details h5 {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.content-part .item-part {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding-top: 1.5rem;
+    padding-left: 1rem;
+}
+.content-part .item-part .cust-row {
+    width: 100%;
+    height: 375px;
+    margin-bottom: 2rem;
+    position: relative;
+}
+.item-part .cust-row .product {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 16px;
+    cursor: pointer;
+    background-color: #fff;
+    transition: all .2s ease-in-out;
+    padding: 5px;
+    padding-top: 0;
+    position: relative;
+}
+
+.item-part .cust-row .product a {
+    color: #878787;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    text-align: left;
+    display: block;
+    width: 100%;
+    text-decoration: none;
+}
+.item-part .cust-row .product p {
+    font-size: 18px;
+    margin-bottom: 0;
+    font-weight: 500;
+    color: var(--green);
+    text-align: center;
+    text-transform: capitalize;
+    text-align: left;
+    text-transform: capitalize;
+    color: #0062bd;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 7px;
+    line-height: 1.4;
+    float: left;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+.item-part .cust-row .product img {
+    width: 50%;
+}
+
+.item-part .cust-row .product .product-price-action {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.item-part .cust-row .product .product-price-action .product-price .price-sale {
+    font-size: 18px;
+    color: var(--black);
+}
+
+.item-part .cust-row .product .product-price-action .product-price .price-sale.discount {
+    color: red;
+}
+.item-part .cust-row .product .product-price-action .product-input {
+    border: 1px solid #000;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 10%;
+}
+.item-part .cust-row .product.horizontal-product .product-price-action .product-input{
+    width: 42%;
+    height: 85%;
+}
+.item-part .cust-row .product .product-price-action .product-input .quantity-input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 5px;
+}
+.item-part .cust-row .product .product-price-action .product-input .plus-btn {
+    all: unset;
+    cursor: pointer;
+    position: absolute;
+    right: 3px;
+}
+.item-part .cust-row .product .product-price-action .product-input .plus-btn img {
+    height: 100%;
+    width: 100%;
+}
+.item-part .cust-row .product .product-price-action .product-input .minus-btn {
+    all: unset;
+    cursor: pointer;
+    position: absolute;
+    left: 3px;
+}
+.item-part .cust-row .product .product-price-action .product-input .minus-btn img {
+    height: 100%;
+    width: 100%;
+}
+
+.item-part .cust-row .product .product-price-action .product-action .btn-add-to-cart {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: #e6e6e6;
+    color: var(--white);
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.item-part .cust-row .product:hover .product-price-action .product-action .btn-add-to-cart {
+    background-color: var(--green);
+    transition: 0.5s ease;
+}
+
+.item-part .cust-row .product .product-price-action .product-action .btn-add-to-cart svg {
+    color: currentColor;
+}
+
+.item-part .cust-row .product .product-price-action .product-action .btn-add-to-cart svg path {
+    fill: currentColor;
+}
+
+.item-part .cust-row .text-content-part .description-text-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+}
+.item-part .cust-row .description-text-block h6 {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 1.5rem;
+}
+.item-part .cust-row .description-text-block .big-text {
+    font-size: 18px;
+    font-weight: 300;
+    opacity: 0.8;
+}
+.item-part .cust-row .description-text-block span {
+    font-weight: 300;
+    font-size: 14px;
+    color: #878787;
+}
+.item-part .cust-row .description-text-block ul {
+    margin: 0;
+    padding-left: 1rem;
+}
+.item-part .cust-row .description-text-block ul li {
+    list-style: none;
+    display: flex;
+    margin-bottom: 3px;
+    align-items: baseline;
+    font-size: 14px;
+    font-style: normal;
+    color: #878787;
+    font-weight: 300;
+    opacity: 0.8;
+}
+.item-part .cust-row .description-text-block ul li::before {
+    content: "";
+    display: block;
+    flex: 0 0 5px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #878787;
+    margin-top: 6px;
+    -webkit-margin-end: 10px;
+    margin-inline-end: 10px;
+}
+.item-part .section-title-block h3::after {
+    bottom: -10px;
+}
+.item-part .cust-row .section-title-block::after{
+    width: 100%;
+    bottom: -3px;
+}
+
+.item-part .cust-row::after {
+    content: '';
+    display: inline;
+    background-color: lightgray;
+    height: 1px;
+    width: 65%;
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+}
+
+.item-part .cust-row:last-child:after {
+    display: none;
+}
+.wizard-printer-page .item-part .product .product-price-action .wrapper-two-input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-inline-start: 10px;
+    gap: 10px;
+}
+@media screen and (max-width: 1200px) {
+    .wizard-printer-page .item-part .product .product-price-action {
+        flex-wrap: wrap;
+    }
+    .wizard-printer-page .item-part .product .product-price-action .wrapper-two-input {
+        justify-content: flex-start;
+        margin: 0;
+    }
+    .wizard-printer-page .item-part .product .product-price-action .wrapper-two-input .product-input {
+        width: 60%;
+    }
+}
+@media screen and (max-width: 991px) {
+    .wizard-printer-page .title-block .title-text::after {
+        bottom: -65px;
+    }
+    .wizard-printer-page .title-block.second-title .title-text::after {
+        bottom: -27px;
+    }
+    .wizard-printer-page .title-block {
+        flex-wrap: wrap;
+    }
+    .wizard-printer-page .title-block .buy-now{
+        margin-top: 10px;
+        padding-left: 15px;
+    }
+    .wizard-printer-page .content-part .item-part .cust-row {
+        height: 100%;
+    }
+    .wizard-printer-page .item-part .cust-row::after {
+        bottom: -10px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .wizard-printer-page .printer-block {
+        flex-direction: column;
+    }
+    .wizard-printer-page .printer-block .printer-part {
+        flex-direction: row;
+    }
+    .wizard-printer-page .printer-block .printer-part .image-block {
+        padding-left: 50px;
+    }
+    .wizard-printer-page .title-block {
+        width: 100%;
+    }
+    .wizard-printer-page .title-block.second-title .title-text::after {
+        bottom: -65px;
+    }
+    .wizard-printer-page .title-block .buy-now {
+        width: 50%;
+    }
+    .wizard-printer-page .content-part .printer-block::after {
+        width: 100%;
+        left: 0;
+    }
+    .wizard-printer-page .select-printer-type .buy-now {
+        right: 130px;
+        top: 65px;
+    }
+    .wizard-printer-page .select-printer-type .printing-style {
+        padding: 0 35px;
+    }
+    .wizard-printer-page .item-part .cust-row::after {
+        left: 5%;
+        width: 80%;
+    }
+    .wizard-printer-page .selected-item-block.result-page::after {
+        width: 80%;
+    }
+    .wizard-printer-page .content-part .selected-item-block .value-div {
+        gap: 10px;
+    }
+}
+@media screen and (max-width: 425px) {
+    .wizard-printer-page .content-part .printer-block {
+        height: 280px;
+    }
+
+    .wizard-printer-page .content-part {
+        padding: 0 15px;
+    }
+
+    .wizard-printer-page .printer-block .printer-part .name-block {
+        padding-left: 15px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .wizard-printer-page .printer-block .details-part .details h5 {
+        font-size: 14px;
+    }
+
+    .wizard-printer-page .printer-block {
+        gap: 10px;
+    }
+    .wizard-printer-page .select-printer-type .buy-now {
+        left: 75px;
+        top: 75px;
+    }
+}

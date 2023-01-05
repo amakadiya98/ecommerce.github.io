@@ -1,0 +1,201 @@
+.verifyMail-page {
+    padding: 40px 0;
+}
+.verifyMail-page .content-part {
+    margin: auto;
+}
+
+.verifyMail-page .content-part .content-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex: 1 1 auto;
+    gap: 25px;
+}
+
+.verifyMail-page .content-block .email-verify-block {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+}
+
+.email-verify-block .heading-block {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.email-verify-block .heading-block h4 {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.email-verify-block .subtitle-block {
+    margin-bottom: 10px;
+}
+
+.email-verify-block .subtitle-block p {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.email-verify-block .new-code-block {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.email-verify-block .new-code-block .image-block {
+    margin-right: 10px;
+    display: flex;
+    padding-top: 2px;
+}
+.email-verify-block .new-code-block .image-block img {
+    width: 18px;
+    height: 18px;
+}
+.email-verify-block .new-code-block span {
+    font-size: 14px;
+}
+
+.email-verify-block .link-part {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 1rem;
+    margin-top: 1.5rem;
+}
+.email-verify-block .link-part a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.email-verify-block .instruction-block p {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0;
+}
+.email-verify-block .instruction-block ul {
+    margin-top: 0.75rem;
+}
+.email-verify-block .instruction-block li {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0;
+    margin-bottom: 0.5rem;
+}
+.email-verify-block .addNumber-block {
+    margin-bottom: 10px;
+}
+.email-verify-block .addNumber-block label {
+    font-size: 15px;
+    font-weight: 600;
+}
+.email-verify-block .numberInput-block {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: 8px;
+}
+
+.email-verify-block .numberInput-block .dropdown {
+    margin-right: 10px;
+}
+.email-verify-block .numberInput-block .input-block {
+    width: 100%;
+}
+.email-verify-block .numberInput-block .input-block input[type='text']{
+    padding: 0.375rem 0.375rem;
+    width: 100%;
+    outline: none;
+    border-radius: 3px;
+    border: 1px solid lightgrey;
+}
+.email-verify-block .description-text {
+    margin-bottom: 25px;
+}
+.email-verify-block .description-text p {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+}
+.email-verify-block .description-text p a {
+    text-decoration: none;
+    color: var(--green);
+}
+.email-verify-block .change-block {
+    margin-bottom: 1.5rem;
+}
+.email-verify-block .change-block span {
+    font-size: 16px;
+    font-weight: 500;
+    margin-inline-start: 2px;
+    margin-inline-end: 6px;
+}
+.email-verify-block .change-block a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 400;
+}
+.email-verify-block .link-part a.green-text {
+    color: var(--green);
+}
+
+.verifyMail-page .content-block .warning-block {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid brown;
+}
+.warning-block .image-block {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.warning-block .image-block img {
+    width: 35px;
+    height: 35px;
+}
+.warning-block .text-block {
+    padding-top: 5px;
+}
+.warning-block .text-block h5 {
+    color: brown;
+}
+.warning-block .text-block p {
+    margin: 0;
+}
+.verifyMail-page .content-block .account-link-block {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding-left: 5px;
+    margin-top: 0.5rem;
+}
+
+.account-link-block h5 {
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.account-link-block a {
+    text-decoration: none;
+    color: var(--green);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}

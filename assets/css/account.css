@@ -1,0 +1,112 @@
+.account-page .content-part {
+    margin: auto;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 15px 20px;
+}
+
+.account-page .content-part .input-group span {
+    margin-inline-start: 3px;
+}
+
+.label-after-checkbox {
+    margin-bottom: 1rem;
+}
+
+.country {
+    margin-bottom: 1rem;
+}
+
+.country label {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.country .dropdown button {
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    padding: 2px 6px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.country .dropdown button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.country .dropdown .btn:first-child:active {
+    border-color: lightgray;
+}
+
+.country .dropdown ul, .country .dropdown ul li {
+    width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.condition {
+    margin-bottom: 1rem;
+}
+
+.account-page .buy-now {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.account-page .buy-now .buy-btn {
+    padding: 10px 0;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 500;
+    color: var(--white);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    background-color: var(--green);
+    transition: background .25s ease-in-out, color .25s ease-in-out, border .25s ease-in-out;
+}
+
+.account-page .buy-now .buy-btn:hover {
+    background-color: #333E48;
+}
+.account-page .content-part .text-block p {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 0.875rem;
+}
+.account-page .content-part .text-block a {
+    text-decoration: none;
+    color: var(--green);
+}
+
+.account-page .content-part .text-block {
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 1rem;
+}
+.account-page .content-part .login-link {
+    margin-bottom: 2rem;
+}
+.account-page .content-part .login-link p {
+    font-size: 16px;
+}
+.account-page .content-part .login-link a {
+    text-decoration: none;
+    color: var(--green);
+}
+
+.content-part .form-field-data{
+    margin-top: 1rem;
+}
+
+@media screen and (max-width: 680px) {
+    .account-page .card-printer-section {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}

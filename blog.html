@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel='stylesheet' href='./assets/css/blog.css'>
+    <title>Blog</title>
+</head>
+<body>
+    <!-- header part start here -->
+    <header>
+        <!-- desktop header start here -->
+        <div class="header-part d-none d-lg-block desktop-header">
+            <div class="container">
+                <div class="header-cart-part">
+                    <div class="logo-part">
+                        <img src="./assets/images/logo-lg.png" alt="logo" />
+                    </div>
+                    <div class="search-part">
+                        <form class="d-flex">
+                            <input class="form-control me-2" placeholder="Search" aria-label="Search">
+                            <div class="search-icon">
+                                <img src="./assets/images/search.png" alt="search-icon">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="item-part">
+                        <a href="#">Consumibles</a>
+                        <a href="#">Impresoras</a>
+                    </div>
+                    <div class="left-part">
+                        <div class="image-part">
+                            <img src="./assets/images/free-delivery.png" alt="free-delivery" />
+                        </div>
+                        <div class="text-part">
+                            <p>Remaining to free delivery</p>
+                            <strong>$500.00</strong>
+                        </div>
+                    </div>
+                    <div class="user-cart-part">
+                        <div class="user">
+                            <img src="./assets/images/user.png" alt="user-icon">
+                        </div>
+                        <div class="cart-part">
+                            <div class="cart-icon">
+                                <img src="./assets/images/cart.png" alt="cart-icon">
+                                <div class="cart-no">2</div>
+                            </div>
+                            <h6>258 €</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--mobile header start here  -->
+        <div class="header-mobile d-lg-none">
+            <div class='container'>
+                <div class='header-mobile-top'>
+                    <div class='header-cart-part'>
+                        <div class='logo-part'>
+                            <img src="./assets/images/logo-lg.png" alt="logo" />
+                        </div>
+                    </div>
+                    <div class="user-cart-part">
+                        <div class="search-icon">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent2"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <img src="./assets/images/search.png" alt="search-icon"></button>
+                        </div>
+                        <div class="user">
+                            <img src="./assets/images/user.png" alt="user-icon">
+                        </div>
+                        <div class="cart-part">
+                            <div class="cart-icon">
+                                <img src="./assets/images/cart.png" alt="cart-icon">
+                                <div class="cart-no">2</div>
+                            </div>
+                        </div>
+                    </div>
+                    <nav class='navbar'>
+                        <div class='insider-block'>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                        </div>
+                    </nav>
+                </div>
+                <!-- search box for header -->
+                <div class='collapse navbar-collapse-2' id="navbarSupportedContent2">
+                    <div class='search-box-part'>
+                        <div class='input-part'>
+                            <input type='text' name='search' id='search'>
+                            <label for='search'><img alt='search' src="./assets/images/search.png" /></label>
+                        </div>
+                    </div>
+                </div>
+                <!-- drawer -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="drawer-overlay" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    </div>
+                    <div class='drawer'>
+                        <div class='sidebar-top-part'>
+                            <div class='container-fluid'>
+                                <div class='container-sidebar-insider'>
+                                    <div class="left-part">
+                                        <div class="image-part">
+                                            <img src="./assets/images/free-delivery.png" alt="free-delivery" />
+                                        </div>
+                                        <div class="text-part">
+                                            <p>Remaining to free delivery</p>
+                                            <strong>$500.00</strong>
+                                        </div>
+                                    </div>
+                                    <div class='close-btn-part'>
+                                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#navbarSupportedContent"
+                                            aria-controls="navbarSupportedContent" aria-expanded="false"
+                                            aria-label="Toggle navigation">
+                                            <img src='./assets/images/header/close.png' alt='close-icon'>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='content-part'>
+                            <div class="item-part">
+                                <a href="#">Consumibles</a>
+                                <a href="#">Impresoras</a>
+                            </div>
+                            <div class='customer-details-part'>
+                                <ul class="customer-link-part">
+                                    <li class="customer-link">
+                                        <a href="#" title="my-request">Mis solicitudes <span class="badge">3</span></a>
+                                    </li>
+                                    <li class="customer-link">
+                                        <a href="#" title="communications">Comunicados <span class="badge">3</span></a>
+                                    </li>
+                                    <li class="customer-link">
+                                        <a href="#" title="client-area">Área Cliente</a>
+                                    </li>
+                                    <li class="customer-link">
+                                        <a href="#" title="profile">Roger Pujol</a>
+                                    </li>
+                                    <li class="customer-link">
+                                        <a href="#" title="profile">cerrar sesión</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- main-content part start here -->
+    <main class="blog-page">
+        <section class="common-section">
+            <div class='container'>
+                <div class='row'>
+                    <div class='col-md-10 content-part'>
+                        <div class='section-title-block'>
+                            <h3 class="section-title mb-5">Blog</h3>
+                        </div>
+                        <div class='details-block-part'>
+                            <div class='row'>
+                                <div class='col-md-4'>
+                                    <div class='blog-card'>
+                                        <img src='./assets/images/blog/img-1.jpg' alt='card-1-img'>
+                                        <div class='card-description'>
+                                            <div class='card-title'>
+                                                <a href="#">¿Estoy obligado a realizar el mantenimiento trimestral de los sistemas de protección contra incendios?</a>
+                                            </div>
+                                            <span>¿Estoy obligado a realizar el mantenimiento trimestral de los sistemas de protección contra incendios?</span>
+                                        </div>
+                                        <div class='card-footer'>
+                                            <div class='read-more'>
+                                                <span class="line"></span>
+                                                <a href="#" class="text-link">LEER MÁS</a>
+                                            </div>
+                                            <div class='date'>
+                                                <span>29/03/19</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class='col-md-4'>
+                                    <div class='blog-card'>
+                                        <img src='./assets/images/blog/img-2.jpg' alt='card-1-img'>
+                                        <div class='card-description'>
+                                            <div class='card-title'>
+                                                <a href="#">Los riesgos del bajo coste en la seguridad de las personas</a>
+                                            </div>
+                                            <span>Los riesgos del bajo coste en la seguridad de las personas, cómo afecta el "low cost" al sector de la seguridad contra incendios, analizamos sus consecuencias en el sector y en el cliente final.</span>
+                                        </div>
+                                        <div class='card-footer'>
+                                            <div class='read-more'>
+                                                <span class="line"></span>
+                                                <a href="#" class="text-link">LEER MÁS</a>
+                                            </div>
+                                            <div class='date'>
+                                                <span>31/01/19</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class='col-md-4'>
+                                    <div class='blog-card'>
+                                        <img src='./assets/images/blog/img-3.jpg' alt='card-1-img'>
+                                        <div class='card-description'>
+                                            <div class='card-title'>
+                                                <a href="#">¿En que cambia el nuevo RIPCI en comunidades de propietarios y administradores de fincas?</a>
+                                            </div>
+                                            <span>¿En que cambia el nuevo RIPCI en comunidades de propietarios y administradores de fincas? Hemos querido sintetizar la nueva normativa enfocada en el sector residencial y administradores de fincas para resolver algunas dudas.</span>
+                                        </div>
+                                        <div class='card-footer'>
+                                            <div class='read-more'>
+                                                <span class="line"></span>
+                                                <a href="#" class="text-link">LEER MÁS</a>
+                                            </div>
+                                            <div class='date'>
+                                                <span>03/01/18</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class='col-md-4'>
+                                    <div class='blog-card'>
+                                        <img src='./assets/images/blog/img-4.jpg' alt='card-1-img'>
+                                        <div class='card-description'>
+                                            <div class='card-title'>
+                                                <a href="#">El Consejo de Ministros aprueba el Reglamento de instalaciones de protección contra incendios (RIPCI)</a>
+                                            </div>   
+                                            <span>El pasado viernes 21 de mayo se aprobó mediante Real Decreto este reglamento que tiene como objeto establecer cuáles son los requisitos en el diseño, la instalación, el mantenimiento y la inspección de los equipos y componentes de instalaciones de protección activa contra incendios. Se destacan los siguientes aspectos en la publicación oficial r</span>
+                                        </div>
+                                        <div class='card-footer'>
+                                            <div class='read-more'>
+                                                <span class="line"></span>
+                                                <a href="#" class="text-link">LEER MÁS</a>
+                                            </div>
+                                            <div class='date'>
+                                                <span>25/05/17</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class='col-md-4'>
+                                    <div class='blog-card'>
+                                        <img src='./assets/images/blog/img-5.jpg' alt='card-1-img'>
+                                        <div class='card-description'>
+                                            <div class='card-title'>
+                                                <a href="#">Manual de uso de un extintor</a>
+                                            </div>
+                                            <span>El uso de extintores de CO2 es idóneo para sofocar determinados tipos de fuego por su alta efectividad y sus prestaciones. Por ejemplo, al no conducir la electricidad, pueden ser usados para apagar incendios cargados eléctricamente. Además, no dejan ningún tipo de residuo tras su utilización. Eso sí, es importante saber que este gas no será efect</span>
+                                        </div>
+                                        <div class='card-footer'>
+                                            <div class='read-more'>
+                                                <span class="line"></span>
+                                                <a href="#" class="text-link">LEER MÁS</a>
+                                            </div>
+                                            <div class='date'>
+                                                <span>18/07/16</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class='col-md-4'>
+                                    <div class='blog-card'>
+                                        <img src='./assets/images/blog/img-6.jpg' alt='card-1-img'>
+                                        <div class='card-description'>
+                                            <div class='card-title'>
+                                                <a href="#">Como actua el extintor de CO2 frente a un fuego</a>
+                                            </div>
+                                            <span>Los propietarios de locales comerciales deben disponer por ley de al menos un extintor de polvo ABC de 6 kg., pero es importante saber que la seguridad de nuestro local aumentará al incorporar un extintor de CO2, tal y como sucede en garajes, comunidades de vecinos, viviendas particulares y otros espacios. En estos dispositivos el dióxido de carbono se almacena en estado de alta presión líquido</span>
+                                        </div>
+                                        <div class='card-footer'>
+                                            <div class='read-more'>
+                                                <span class="line"></span>
+                                                <a href="#" class="text-link">LEER MÁS</a>
+                                            </div>
+                                            <div class='date'>
+                                                <span>09/05/16</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='navigation-block'>
+                            <div class='page-no'>
+                                <nav aria-label="Page navigation example">
+                                    <ul class="pagination">
+                                      <li class="page-item"><a class="page-link cus-active" href="#">1</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">6</a></li>
+                                      <li class="page-item"><a class="page-link no-style" href="#">...</a></li>
+                                      <li class="page-item"><a class="page-link" href="#"><svg class="svg-anlge-right" width="10" height="10" viewBox="0 0 10 18"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9.69217 8.35754L1.59765 0.265714C1.24247 -0.0885713 0.667021 -0.0885713 0.310942 0.265714C-0.0442398 0.619999 -0.0442398 1.19545 0.310942 1.54974L7.76341 8.99951L0.311839 16.4493C-0.0433428 16.8036 -0.0433428 17.379 0.311839 17.7342C0.667021 18.0885 1.24337 18.0885 1.59855 17.7342L9.69307 9.64238C10.0429 9.29176 10.0429 8.70727 9.69217 8.35754Z"
+                                            fill="currentColor"></path>
+                                    </svg></a></li>
+                                    </ul>
+                                  </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- footer start here -->
+    <footer class="footer-part">
+        <div class="footer-head newsletter-part">
+            <div class="container">
+                <div class="row">Somos distribuidor autorizado de Evolis, epsecializado en impresoras de tarjetas de PVC
+                </div>
+            </div>
+        </div>
+        <div class="content-part">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-md-5 col-sm-12">
+                        <div class="footer-left-section">
+                            <div class="logo-size">
+                                <img src="./assets/images/logo-lg.png" alt="logo">
+                            </div>
+                            <div class="right-part-helpline">
+                                <div class="right-part-helpline-content">
+                                    <img src="./assets/images/footer/helpline-icon.png" alt="helpline-logo" />
+                                    <div class="contact-no-css">
+                                        <div class="font-size">Contact-Information</div>
+                                        <div class="font-size-contact-no"><a href="">(+34)616 43 28 05</a></div>
+                                    </div>
+
+                                </div>
+                                <div>
+                                    <div class="font-size-location">Location</div>
+                                    <div class="font-size">England ,Europe</div>
+                                </div>
+                                <div class='right-upper-sec'>
+                                    <div class='sm-icon'>
+                                        <a href='#'>
+                                            <div class='facebook common-icon-css'></div>
+                                        </a>
+                                    </div>
+                                    <div class='sm-icon'>
+                                        <a href='#'>
+                                            <div class='instagram common-icon-css'></div>
+                                        </a>
+                                    </div>
+                                    <div class='sm-icon'>
+                                        <a href='#'>
+                                            <div class='linkdein common-icon-css'></div>
+                                        </a>
+                                    </div>
+                                    <div class='sm-icon'>
+                                        <a href='#'>
+                                            <div class='twiter  common-icon-css'></div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-md-7 col-sm-12">
+                        <div class="footer-right-section">
+                            <div class="row">
+                                <div class=" col-lg-4 col-md-4 col-sm-6 ">
+                                    <div class="first-part">
+                                        <div class="text-heading">Acceso rapido</div>
+                                        <div class="text-div">
+                                            <div class="font-size text-padding"><a href="#">Impresoras</a></div>
+                                            <div class="font-size text-padding"><a href="#">Cintas</a></div>
+                                            <div class="font-size text-padding"><a href="#">Kits de</a></div>
+                                            <div class="font-size text-padding"><a href="#">Tarjetas</a></div>
+                                            <div class="font-size text-padding"><a href="#">Accesorios</a></div>
+                                            <div class="font-size text-padding"><a href="#">Pads</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-6 secondd-part">
+                                    <div class="secondd-part">
+                                        <div class="text-heading">Information</div>
+                                        <div class="text-div">
+                                            <div class="font-size text-padding"><a href="#">Impresoras</a></div>
+                                            <div class="font-size text-padding"><a href="#">Cintas</a></div>
+                                            <div class="font-size text-padding"><a href="#">Kits de</a></div>
+                                            <div class="font-size text-padding"><a href="#">Tarjetas Cintas</a></div>
+                                            <div class="font-size text-padding"><a href="#">Accesorios Cintas</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-6">
+                                    <div class="third-part">
+                                        <div class="text-heading">Others-Information</div>
+                                        <div class="text-div">
+                                            <div class="font-size text-padding"><a href="#">Impresoras</a></div>
+                                            <div class="font-size text-padding"><a href="#">Impresoras</a></div>
+                                            <div class="font-size text-padding "><a href="#">Cintas</a></div>
+                                            <div class="font-size text-padding"><a href="#">Kits de</a></div>
+                                            <div class="font-size text-padding"><a href="#">Tarjetas</a></div>
+                                            <div class="font-size text-padding"><a href="#">Tarjetas-Kits de</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lower-section">
+                <div class="container section-width">
+                    <div class="footer-right-txt">
+                        <div class=" font-size">@ 2022 </div>
+                        <div class="font-size-copyright">Company-name</div>
+                        <div class=" font-size-company">CopyRight</div>
+                    </div>
+                    <div class="footer-left-txt">
+                        <div class="logo-size"> <img src="./assets/images/footer/visa-card.png" alt="visa-card" /></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="./assets/js/custom.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,223 @@
+main.customerLogin-page {
+    min-height: calc(100vh - 30.5vh);
+    display: flex;
+}
+
+.customerLogin-page .content-part {
+    margin: auto;
+}
+
+.customerLogin-page-header .header-part .navbar {
+    background-color: var(--customerBlue);
+}
+
+.customerLogin-page-header .header-mobile .navbar {
+    background-color: var(--customerBlue);
+}
+.customerLogin-page-header .header-mobile .nav-btn {
+    background-color: var(--white);
+}
+.customerLogin-page-header .header-part .customer-link a .badge {
+    color: var(--customerBlue) !important;
+}
+
+.customerLogin-page-header .header-part .header-cart-part .logo-part img {
+    width: 21%;
+}
+
+.customerLogin-page .content-block {
+    display: flex;
+    width: 100% !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+    overflow: hidden;
+}
+
+.customerLogin-page .form-part {
+    background-color: var(--white);
+    border-radius: 10px;
+    padding: 15px;
+    border: 1px solid lightgray;
+    width: 100%;
+}
+
+.customerLogin-page .form-part .input-group input[type='password'] {
+    margin-bottom: 0.5rem;
+}
+
+.customerLogin-page .content-part .form-part .buy-now {
+    margin-bottom: 2.5rem;
+}
+
+.customerLogin-page .content-part .form-part .buy-now .buy-btn {
+    background-color: var(--customerBlue);
+}
+
+.customerLogin-page .content-part .bottom-section {
+    margin: 0;
+    margin-top: 2rem;
+    display: flex;
+    width: 100% !important;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.bottom-section p {
+    font-size: 12px;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.bottom-section::before {
+    content: '';
+    width: 15%;
+    display: inline-flex;
+    height: 1px;
+    margin-right: 5px;
+    background-color: lightgray;
+}
+
+.bottom-section::after {
+    content: '';
+    width: 15%;
+    display: inline-flex;
+    margin-left: 5px;
+    height: 1px;
+    background-color: lightgray;
+}
+
+.customerLogin-page .content-block .create-account {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-block .create-account .new-acc-btn {
+    all: unset;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 8px 25px;
+    background: linear-gradient(to top, lightgray, white);
+    font-size: 12px;
+    font-weight: 600;
+    transition: background .25s ease-in-out, color .25s ease-in-out, border .25s ease-in-out;
+}
+
+.content-block .create-account .new-acc-btn:hover {
+    background: var(--black);
+    color: var(--white);
+}
+
+.customerLogin-page .content-block .create-account {
+    margin-bottom: 2.5rem;
+}
+
+@media screen and (max-width: 1440px) {
+    main.customerLogin-page {
+        min-height: calc(100vh - 29vh);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .bottom-section p {
+        font-size: 15px;
+    }
+
+    .bottom-section::after {
+        width: 25%;
+    }
+
+    .bottom-section::before {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    main.customerLogin-page {
+        min-height: calc(100vh - 32.5vh);
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .bottom-section p {
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .customerLogin-page .content-block .create-account {
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media screen and (max-width:560px) {
+    .customerLogin-page-header .header-mobile .header-cart-part .logo-part img {
+        width: 40%;
+    }
+}
+
+.customerLogin-page-header .header-part .header-cart-part .item-part a:hover {
+    color: var( --customerBlue);
+}
+.customer-login-footer.footer-part .content-part {
+    background-color: var(--darkBlack);
+}
+
+.customer-login-footer.footer-part .text-heading {
+    color: var( --customerBlue);
+}
+
+.customer-login-footer.footer-part .font-size-location {
+    color: var( --customerBlue);
+}
+
+.customer-login-footer .content-part a {
+    color: var(--gray);
+}
+
+.customer-login-footer .font-size {
+    color: var(--gray);
+}
+
+.footer-part.customer-login-footer .content-part a:hover{
+    color: var( --customerBlue);
+}
+
+.footer-part.customer-login-footer .footer-left-section .right-upper-sec .sm-icon .facebook {
+    background-image: url('../images/footer-vltm/facebook.svg');
+
+}
+
+.footer-part.customer-login-footer .footer-left-section .right-upper-sec .sm-icon .instagram {
+    background-image: url('../images/footer-vltm/instagram.svg');
+}
+
+.footer-part.customer-login-footer .footer-left-section .right-upper-sec .sm-icon .linkdein {
+    background-image: url('../images/footer-vltm/linkdein.svg');
+}
+
+.footer-part.customer-login-footer .footer-left-section .right-upper-sec .sm-icon .twiter {
+    background-image: url('../images/footer-vltm/twiter.svg');
+}
+
+.footer-part.customer-login-footer .footer-left-section .right-upper-sec .sm-icon .facebook:hover {
+    background-image: url('../images/footer-vltm/facebook-hover.svg');
+}
+
+.footer-part.customer-login-footer .footer-left-section .right-upper-sec .sm-icon .instagram:hover {
+    background-image: url('../images/footer-vltm/instagram-hover.svg');
+}
+
+.footer-part.customer-login-footer .footer-left-section .right-upper-sec .sm-icon .linkdein:hover {
+    background-image: url('../images/footer-vltm/linkdein-hover.svg');
+}
+
+.footer-part.customer-login-footer .footer-left-section .right-upper-sec .sm-icon .twiter:hover {
+    background-image: url('../images/footer-vltm/twiter-hover.svg');
+}

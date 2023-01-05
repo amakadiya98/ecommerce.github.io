@@ -1,0 +1,133 @@
+main.login-page {
+    min-height: calc(100vh - 30.5vh);
+    display: flex;
+}
+
+.login-page .content-part {
+    margin: auto;
+}
+
+.login-page .content-block {
+    display: flex;
+    width: 100% !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+    overflow: hidden;
+}
+
+.login-page .form-part {
+    background-color: var(--white);
+    border-radius: 10px;
+    padding: 15px;
+    border: 1px solid lightgray;
+    width: 100%;
+}
+
+.login-page .form-part .input-group input[type='password'] {
+    margin-bottom: 0.5rem;
+}
+
+.login-page .content-part .form-part .buy-now {
+    margin-bottom: 2.5rem;
+}
+
+.login-page .content-part .bottom-section {
+    margin: 0;
+    margin-top: 2rem;
+    display: flex;
+    width: 100% !important;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.bottom-section p {
+    font-size: 12px;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.bottom-section::before {
+    content: '';
+    width: 15%;
+    display: inline-flex;
+    height: 1px;
+    margin-right: 5px;
+    background-color: lightgray;
+}
+
+.bottom-section::after {
+    content: '';
+    width: 15%;
+    display: inline-flex;
+    margin-left: 5px;
+    height: 1px;
+    background-color: lightgray;
+}
+
+.login-page .content-block .create-account {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-block .create-account .new-acc-btn {
+    all: unset;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 8px 25px;
+    background: linear-gradient(to top, lightgray, white);
+    font-size: 12px;
+    font-weight: 600;
+    transition: background .25s ease-in-out, color .25s ease-in-out, border .25s ease-in-out;
+}
+
+.content-block .create-account .new-acc-btn:hover {
+    background: var(--black);
+    color: var(--white);
+}
+.login-page .content-block .create-account {
+    margin-bottom: 2.5rem;
+}
+
+@media screen and (max-width: 1440px) {
+    main.login-page {
+        min-height: calc(100vh - 29vh);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .bottom-section p {
+        font-size: 15px;
+    }
+
+    .bottom-section::after {
+        width: 25%;
+    }
+
+    .bottom-section::before {
+        width: 25%;
+    }
+}
+@media screen and (max-width: 1024px) {
+    main.login-page {
+        min-height: calc(100vh - 32.5vh);
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .bottom-section p {
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .login-page .content-block .create-account {
+        margin-bottom: 1.5rem;
+    }
+}

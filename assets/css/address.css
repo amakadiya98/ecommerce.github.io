@@ -1,0 +1,256 @@
+.address-page .content-part {
+    margin: auto;
+}
+
+/* specific css start */
+.address-page .content-part .shiping-add-part {
+    margin-bottom: 2.5rem;
+}
+
+.content-part .shiping-add-part .input-part {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 15px 15px 0;
+}
+
+.content-part .shiping-add-part .add-address {
+    margin-top: 0.6rem;
+}
+
+.content-part .shiping-add-part .add-address .add-btn {
+    background-color: var(--white);
+    border: none;
+    outline: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.content-part .contact-details-part {
+    margin-bottom: 2.5rem;
+}
+
+.contact-details-part .details-part {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 50%;
+}
+
+.content-part .payment-mode-part {
+    margin-bottom: 2.5rem;
+}
+
+.content-part .payment-mode-part .payment-option {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+}
+
+.content-part .shipping-way {
+    margin-bottom: 0.875rem;
+}
+
+.content-part .shipping-way .shipping-method {
+    padding: 10px;
+}
+
+.content-part .amount-block {
+    margin-bottom: 1.5rem;
+}
+
+.content-part .amount-block .amount-content-part {
+    padding: 10px;
+}
+
+.amount-block .amount-content-part .subtotal {
+    font-size: 12px;
+    text-align: left;
+}
+
+.amount-block .amount-content-part .amount-type-block {
+    display: flex;
+}
+
+.amount-content-part .amount-type-block .label {
+    width: 200px;
+    min-width: 200px;
+    max-width: 200px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.amount-content-part .amount-type-block .label small {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.amount-content-part .amount-type-block .amount {
+    width: 120px;
+    min-width: 120px;
+    max-width: 120px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: right;
+}
+
+.amount-content-part .amount-type-block .label.total-amount {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.amount-content-part .amount-type-block .amount.total-amount {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.address-page .buy-now {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.address-page .buy-now .buy-btn {
+    padding: 10px 0;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 500;
+    color: var(--white);
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    width: 85%;
+    background-color: var(--green);
+    transition: background .25s ease-in-out, color .25s ease-in-out, border .25s ease-in-out;
+}
+
+.address-page .buy-now .buy-btn:hover {
+    background-color: #333E48;
+}
+
+/* model custom css */
+.shipping-address-modal .modal-header {
+    background-color: var(--green);
+    border-bottom: none;
+}
+
+.shipping-address-modal .modal-header .modal-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--white);
+}
+.shipping-address-modal .modal-header button:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;   
+}
+.shipping-address-modal .modal-header .btn-close {
+    font-size: 10px;
+}
+
+.shipping-address-modal .modal-body .modal-heading-text {
+    margin-top: 0.5rem;
+    font-weight: 600;
+}
+
+.shipping-address-modal .modal-body .two-input-group {
+    display: flex;
+    gap: 15px;
+}
+
+.shipping-address-modal .modal-body .two-input-group .postal-code {
+    min-width: 135px;
+    max-width: 135px;
+}
+
+.shipping-address-modal .modal-body .two-input-group .city {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex: 1 1 auto;
+}
+.shipping-address-modal .modal-body .country {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex: 1 1 auto;
+}
+.shipping-address-modal .modal-body .country label {
+    font-size: 12px;
+    font-weight: 400;
+}
+.shipping-address-modal .modal-body .country button {
+    padding: 2px 6px;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 3px;
+    border: 1px solid lightgray;
+}
+.shipping-address-modal .modal-body .country .dropdown,
+.shipping-address-modal .modal-body .country .dropdown ul {
+    width: 100%;
+}
+.shipping-address-modal .modal-body .country .dropdown ul li {
+    font-size: 14px;
+    font-weight: 400;
+}
+.shipping-address-modal .modal-body .two-input-group .city .dropdown {
+    width: 100%;
+}
+.shipping-address-modal .modal-body .two-input-group .city .dropdown ul {
+    width: 100%;
+}
+.shipping-address-modal .modal-body .two-input-group .city .dropdown ul li {
+    font-size: 14px;
+    font-weight: 400;
+}
+.shipping-address-modal .modal-body .two-input-group .city label {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.shipping-address-modal .modal-body .two-input-group .city button {
+    padding: 2px 6px;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 3px;
+    border: 1px solid lightgray;
+}
+
+
+
+@media screen and (max-width: 991px) {
+    .contact-details-part .details-part {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .shipping-address-modal .buy-now {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 320px) {
+    .amount-content-part .amount-type-block .label {
+        width: 180px;
+        min-width: 180px;
+        max-width: 180px;
+    }    
+    .amount-content-part .amount-type-block .amount {
+        width: 100px;
+        min-width: 100px;
+        max-width: 100px;
+    }
+}
+.modal-content{
+    border: 0;
+}
+.modal-dialog-scrollable .modal-body{
+    padding: 10px 24px 22px;
+}

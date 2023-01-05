@@ -1,0 +1,249 @@
+.customer-my-data-page .form-align {
+    padding: 20px 20px;
+}
+
+.customer-my-data-page .form-align .section-title-part {
+    width: 100%;
+    border-bottom: 1px solid var(--green);
+    margin-bottom: 5px;
+}
+
+.customer-my-data-page .form-align .section-title-part h3 {
+    font-size: 16px;
+}
+
+.customer-my-data-page .form-align .form-part:nth-child(2) .content-part-text h4 {
+    margin-top: 20px;
+}
+
+.customer-my-data-page .form-align .form-part .content-part-text h4 {
+    font-size: 15px;
+}
+
+.customer-my-data-page .form-align .form-part .content-part-text h4:nth-child(1) {
+    margin-top: 0;
+}
+
+.customer-my-data-page .form-align .form-part.tel-mobile-space .content-part-text {
+    margin-left: 30px;
+}
+
+.customer-my-data-page .sec-title {
+    width: 100%;
+    border-bottom: 1px solid var(--green);
+    margin-bottom: 20px;
+}
+
+.customer-my-data-page .form-align .form-part .tele {
+    padding: 0;
+}
+
+.customer-my-data-page .form-part-one {
+    margin-bottom: 30px;
+}
+
+.customer-my-data-page .form-part {
+    margin-bottom: 60px;
+}
+
+.customer-my-data-page .content-part-text {
+    margin-top: 15px;
+    margin-left: 13px;
+}
+
+.customer-my-data-page .content-part-text h4 .customer-my-data-page .tele-mail {
+    margin-left: 30px;
+}
+
+.customer-my-data-page .input-group.customer-my-data-page-input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    width: 60%;
+    margin-top: 11px;
+}
+
+.customer-my-data-page .checkbox-label-part {
+    display: flex;
+    align-items: center;
+}
+
+.customer-my-data-page .checkbox-label-part label:before {
+    top: 0;
+}
+
+.customer-my-data-page .checkbox-label-part input:checked+label:after {
+    top: 4px;
+}
+
+
+.customer-my-data-page .input-group>label {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.customer-my-data-page .field-title {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.customer-my-data-page .input-part .add-address .condition>h5 {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.customer-my-data-page .address-page .radio-btn span {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+/* 
+.fiscal-addres-part {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+} */
+
+.customer-my-data-page .fiscal-addres-part {
+    padding-left: 15px;
+}
+
+.customer-my-data-page .form-group {
+
+    display: flex;
+    flex-direction: column;
+    padding: 5px 2px 19px 4px;
+    width: 98%;
+}
+
+.customer-my-data-page .input-part .add-address .form-group>span {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.customer-my-data-page .submit-form-input {
+    margin-left: 35px;
+    margin-top: 10px;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    color: black;
+    opacity: 1 !important;
+    margin-bottom: 20px;
+}
+
+.customer-my-data-page .buy-now {
+    display: flex;
+    width: 80%;
+    margin-bottom: 50px;
+}
+
+.customer-my-data-page .buy-now .buy-btn {
+    padding: 10px 6px;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    outline: none;
+    border: none;
+    border-radius: 21px;
+    width: 50%;
+    background-color: var(--green);
+    transition: background .25s ease-in-out, color .25s ease-in-out, border .25s ease-in-out;
+    border-radius: 10px;
+}
+
+.customer-my-data-page .six-part>span {
+    width: 100% !important;
+    border-bottom: 1px solid var(--green);
+}
+
+.customer-my-data-page .buy-now .buy-btn:hover {
+    background-color: #333E48;
+}
+
+.customer-my-data-page .section-title-block.page-specific-section::after {
+    bottom: -7px;
+}
+
+.customer-my-data-page.section-title-block h3.page-specific-title::after {
+    bottom: -8px;
+}
+
+.customer-my-data-page .add-address .add-btn {
+    background-color: var(--white);
+    border: none;
+    outline: none;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.customer-my-data-page .details-part .answers-3 {
+    font-size: 12px;
+    font-weight: 500;
+    padding-left: 24px;
+    white-space: nowrap;
+}
+
+.customer-my-data-page .details-part .answers {
+    font-size: 14px;
+    font-weight: 600;
+    padding-left: 24px
+}
+
+.customer-my-data-page textarea {
+    width: 65%;
+}
+
+/* 
+.customer-my-data-page .form-textarea {
+    width: 65%;
+    padding: 5px 0 0 10px;
+}
+
+.customer-my-data-page .form-textarea textarea {
+    width: 100%;
+    border: 2px solid lightgray;
+    border-radius: 3px;
+}
+
+.customer-my-data-page .form-textarea textarea:focus {
+    outline: none;
+} */
+
+
+/* responsive css start here */
+
+@media screen and (max-width:520px) {
+    .customer-my-data-page .details-part .answers-3 {
+        white-space: normal;
+    }
+
+    .customer-my-data-page .buy-now {
+        width: 100%;
+    }
+
+    .address-page .radio-btn {
+        align-items: flex-start;
+    }
+
+    .customer-my-data-page .address-page .radio-btn span {
+        width: 90%;
+    }
+
+    .address-page .radio-btn-bold-text input[type="radio"],
+    .address-page .radio-btn input[type="radio"] {
+        margin-top: 4px;
+    }
+
+    .customer-my-data-page .form-part {
+        margin-bottom: 20px;
+    }
+
+    .customer-my-data-page .input-group.customer-my-data-page-input-group {
+        width: 100%;
+    }
+
+    .customer-my-data-page textarea {
+        width: 100%;
+    }
+}

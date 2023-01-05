@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <link rel="stylesheet" href="./assets/css/address.css" />
+    <title>Address</title>
+</head>
+
+<body>
+    <!-- header-section start here -->
+    <header>
+        <!-- desktop header start here -->
+        <div class="header-part d-none d-lg-block desktop-header">
+            <div class="container">
+                <div class="header-cart-part">
+                    <div class="logo-part">
+                        <img src="./assets/images/logo-lg.png" alt="logo" />
+                    </div>
+                    <div class="search-part">
+                        <form class="d-flex">
+                            <input class="form-control me-2" placeholder="Search" aria-label="Search">
+                            <div class="search-icon">
+                                <img src="./assets/images/search.png" alt="search-icon">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="item-part">
+                        <a href="#">Consumibles</a>
+                        <a href="#">Impresoras</a>
+                    </div>
+                    <div class="left-part">
+                        <div class="image-part">
+                            <img src="./assets/images/free-delivery.png" alt="free-delivery" />
+                        </div>
+                        <div class="text-part">
+                            <p>Remaining to free delivery</p>
+                            <strong>$500.00</strong>
+                        </div>
+                    </div>
+                    <div class="user-cart-part">
+                        <div class="user">
+                            <img src="./assets/images/user.png" alt="user-icon">
+                        </div>
+                        <div class="cart-part">
+                            <div class="cart-icon">
+                                <img src="./assets/images/cart.png" alt="cart-icon">
+                                <div class="cart-no">2</div>
+                            </div>
+                            <h6>258 €</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--mobile header start here  -->
+        <div class="header-mobile d-lg-none">
+            <div class='container'>
+                <div class='header-mobile-top'>
+                    <div class='header-cart-part'>
+                        <div class='logo-part'>
+                            <img src="./assets/images/logo-lg.png" alt="logo" />
+                        </div>
+                    </div>
+                    <div class="user-cart-part">
+                        <div class="search-icon">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent2"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <img src="./assets/images/search.png" alt="search-icon"></button>
+                        </div>
+                        <div class="user">
+                            <img src="./assets/images/user.png" alt="user-icon">
+                        </div>
+                        <div class="cart-part">
+                            <div class="cart-icon">
+                                <img src="./assets/images/cart.png" alt="cart-icon">
+                                <div class="cart-no">2</div>
+                            </div>
+                        </div>
+                    </div>
+                    <nav class='navbar'>
+                        <div class='insider-block'>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                        </div>
+                    </nav>
+                </div>
+                <!-- search box for header -->
+                <div class='collapse navbar-collapse-2' id="navbarSupportedContent2">
+                    <div class='search-box-part'>
+                        <div class='input-part'>
+                            <input type='text' name='search' id='search'>
+                            <label for='search'><img alt='search' src="./assets/images/search.png" /></label>
+                        </div>
+                    </div>
+                </div>
+                <!-- drawer -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="drawer-overlay" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    </div>
+                    <div class='drawer'>
+                        <div class='sidebar-top-part'>
+                            <div class='container-fluid'>
+                                <div class='container-sidebar-insider'>
+                                    <div class="left-part">
+                                        <div class="image-part">
+                                            <img src="./assets/images/free-delivery.png" alt="free-delivery" />
+                                        </div>
+                                        <div class="text-part">
+                                            <p>Remaining to free delivery</p>
+                                            <strong>$500.00</strong>
+                                        </div>
+                                    </div>
+                                    <div class='close-btn-part'>
+                                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#navbarSupportedContent"
+                                            aria-controls="navbarSupportedContent" aria-expanded="false"
+                                            aria-label="Toggle navigation">
+                                            <img src='./assets/images/header/close.png' alt='close-icon'>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='content-part'>
+                            <div class="item-part">
+                                <a href="#">Consumibles</a>
+                                <a href="#">Impresoras</a>
+                            </div>
+                            <div class='customer-details-part'>
+                                <ul class="customer-link-part">
+                                    <li class="customer-link">
+                                        <a href="#" title="my-request">Mis solicitudes <span class="badge">3</span></a>
+                                    </li>
+                                    <li class="customer-link">
+                                        <a href="#" title="communications">Comunicados <span class="badge">3</span></a>
+                                    </li>
+                                    <li class="customer-link">
+                                        <a href="#" title="client-area">Área Cliente</a>
+                                    </li>
+                                    <li class="customer-link">
+                                        <a href="#" title="profile">Roger Pujol</a>
+                                    </li>
+                                    <li class="customer-link">
+                                        <a href="#" title="profile">cerrar sesión</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="address-page">
+        <section class="card-printer-section">
+            <div class="container">
+                <div class="row">
+                    <div class='col-md-8 content-part'>
+                        <div class='shiping-add-part'>
+                            <div class='section-title'>
+                                <h3>1 - Seleccionar una dirección de envío</h3>
+                            </div>
+                            <div class='input-part'>
+                                <div class="radio-btn">
+                                    <input type='radio' name='default-address' id='default-address' />
+                                    <span>Calle l'Amargor 18 Baixos, Barcelona, 08026, Barcelona, España</span>
+                                </div>
+                                <div class='add-address'>
+                                    <button type="button" class="add-btn" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                        + Añadir una nueva dirección
+                                    </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal shipping-address-modal fade" id="exampleModal" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">Añadir una nueva
+                                                        dirección de envio</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <h5 class="modal-heading-text">Añadir una dirección nueva</h5>
+                                                    <div class="modal-body-content">
+                                                        <div class="country mb-3">
+                                                            <label for=''>País</label>
+                                                            <div class="dropdown">
+                                                                <button class="btn dropdown-toggle" type="button"
+                                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                                    España
+                                                                </button>
+                                                                <ul class="dropdown-menu">
+                                                                    <li><a class="dropdown-item" href="#">España</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Inglaterra</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Nueva Zelanda</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class='input-group'>
+                                                            <label for='full-name'>Nombre completo</label>
+                                                            <input type='text' name='name' id='full-name' />
+                                                        </div>
+                                                        <div class='input-group'>
+                                                            <label for='ph-no'>Número de teléfono</label>
+                                                            <input type='text' name='ph-no' id='ph-no' />
+                                                        </div>
+                                                        <div class='input-group'>
+                                                            <label for='full-name'>Línea de dirección 1</label>
+                                                            <input type='text' name='address' id='add-line1'
+                                                                placeholder='Nombre y número de la calle' />
+                                                            <input type='text' name='address' id='add-line2' class="mt-1"
+                                                                placeholder="Apartamento, suite, unidad, edificio o piso" />
+                                                        </div>
+                                                        <div class='two-input-group'>
+                                                            <div class='input-group postal-code'>
+                                                                <label for='postal-code'>Código postal</label>
+                                                                <input type='text' name='postal-code' id='postal-code' />
+                                                            </div>
+                                                            <div class="city">
+                                                                <label for=''>Ciudad</label>
+                                                                <div class="dropdown">
+                                                                    <button class="btn dropdown-toggle" type="button"
+                                                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                                                        Ciudad
+                                                                    </button>
+                                                                    <ul class="dropdown-menu">
+                                                                        <li><a class="dropdown-item" href="#">España</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Inglaterra</a>
+                                                                        </li>
+                                                                        <li><a class="dropdown-item" href="#">Nueva Zelanda</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class='input-group'>
+                                                            <label for='province'>Provincia</label>
+                                                            <input type='text' name='province' id='province'
+                                                                placeholder="Elegir una provincia" />
+                                                        </div>
+                                                        <div class='checkbox-part'>
+                                                            <div class='form-group'>
+                                                                <input type="checkbox" id="my-default-address">
+                                                                <label for="my-default-address">Convertir en mi dirección
+                                                                    predeterminada</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class='buy-now mt-2'>
+                                                        <button class="buy-btn">Usar esta dirección</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='contact-details-part'>
+                            <div class='section-title'>
+                                <h3>2 - Datos de contacto</h3>
+                            </div>
+                            <div class='details-part'>
+                                <div class="input-group">
+                                    <label for='name'>Nombre de contacto</label>
+                                    <input type='text' name='name' id='name' placeholder="Opcional" />
+                                </div>
+                                <div class='input-group'>
+                                    <label for='number'>Número de teléfono de contacto</label>
+                                    <input type='text' name='number' id='number' placeholder="Opcional" />
+                                </div>
+                                <div class='input-group'>
+                                    <label for='reference'>Su referencia para el pedido</label>
+                                    <input type='text' name='reference' id='reference' placeholder="Opcional" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class='payment-mode-part'>
+                            <div class='section-title'>
+                                <h3>3 - Método de pago</h3>
+                            </div>
+                            <div class='payment-option'>
+                                <div class="radio-btn">
+                                    <input type='radio' name='payment-mode' id='payment-mode1' />
+                                    <span>Tarjeta (Prepago)</span>
+                                </div>
+                                <div class="radio-btn">
+                                    <input type='radio' name='payment-mode' id='payment-mode2' />
+                                    <span>Transferencia (Prepago)</span>
+                                </div>
+                                <div class="radio-btn">
+                                    <input type='radio' name='payment-mode' id='payment-mode3' />
+                                    <span>Forma habitual (Domiciliación)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='shipping-way'>
+                            <div class='section-title'>
+                                <h3>4 - Forma de envío</h3>
+                            </div>
+                            <div class='shipping-method'>
+                                <div class='radio-btn-bold-text'>
+                                    <input type='radio' name='mode' id="mode-1" />
+                                    <div>
+                                        <div class='service-price-part'>
+                                            <span class="bolde-text">45,00 € </span>
+                                            <span class="divider-span">-</span>
+                                            <span class="service-text">Servicio de envío 24/48 h</span>
+                                        </div>
+                                        <div class='vat-price'>
+                                            <span class="normal-text">54,45 € </span>
+                                            <span class="divider-span-vat">-</span>
+                                            <span class="vat-text">IVA incluido</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class='radio-btn-bold-text'>
+                                    <input type='radio' name='mode' id="mode-2" />
+                                    <div>
+                                        <div class='service-price-part'>
+                                            <span class="bolde-text">18,00 € </span>
+                                            <span class="divider-span">-</span>
+                                            <span class="service-text">Servicio de envío económico 72h</span>
+                                        </div>
+                                        <div class='vat-price'>
+                                            <span class="normal-text">21,78 € </span>
+                                            <span class="divider-span-vat">-</span>
+                                            <span class="vat-text">IVA incluido</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class='amount-block'>
+                            <div class='section-title'>
+                            </div>
+                            <div class='amount-content-part'>
+                                <div class="subtotal">Subtotal (4 productos):</div>
+                                <div class="amount-type-block mt-1">
+                                    <div class="label">Bruto:</div>
+                                    <div class="amount">400,00 €</div>
+                                </div>
+                                <div class="amount-type-block">
+                                    <div class="label">Dto.(€):</div>
+                                    <div class="amount">-164,40 €</div>
+                                </div>
+                                <div class="amount-type-block">
+                                    <div class="label">Base:</div>
+                                    <div class="amount">235,60 €</div>
+                                </div>
+                                <div class="amount-type-block">
+                                    <div class="label">Envío:</div>
+                                    <div class="amount">18,00 €</div>
+                                </div>
+                                <div class="amount-type-block">
+                                    <div class="label">IVA 21% <small>(100,00 €)</small></div>
+                                    <div class="amount">21,00 €</div>
+                                </div>
+                                <div class="amount-type-block">
+                                    <div class="label">IVA 10% <small>(135,60 €)</small></div>
+                                    <div class="amount">13,46 €</div>
+                                </div>
+                                <div class="amount-type-block">
+                                    <div class="label">REQ 5,2% <small>(100,00 €)</small></div>
+                                    <div class="amount">5,20 €</div>
+                                </div>
+                                <div class="amount-type-block">
+                                    <div class="label">REQ 4,0% <small>(135,60 €)</small></div>
+                                    <div class="amount">5,42 €</div>
+                                </div>
+                                <div class="amount-type-block mt-2">
+                                    <div class="label total-amount">Importe total:</div>
+                                    <div class="amount total-amount">253,60 €</div>
+                                </div>
+                                <div class='buy-now mt-3'>
+                                    <a href="./account.html" class="w-100">
+                                        <button class="buy-btn">Comprar ahora</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <!-- footer start here -->
+    <footer class="footer-part common-section">
+        <div class="footer-head newsletter-part">
+            <div class="container">
+                <div class="row">Somos distribuidor autorizado de Evolis, epsecializado en impresoras de tarjetas de PVC
+                </div>
+            </div>
+        </div>
+        <div class="content-part">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-md-5 col-sm-12">
+                        <div class="footer-left-section">
+                            <div class="logo-size">
+                                <img src="./assets/images/logo-lg.png" alt="logo">
+                            </div>
+                            <div class="right-part-helpline">
+                                <div class="right-part-helpline-content">
+                                    <img src="./assets/images/footer/helpline-icon.png" alt="helpline-logo" />
+                                    <div class="contact-no-css">
+                                        <div class="font-size">Contact-Information</div>
+                                        <div class="font-size-contact-no"><a href="">(+34)616 43 28 05</a></div>
+                                    </div>
+
+                                </div>
+                                <div>
+                                    <div class="font-size-location">Location</div>
+                                    <div class="font-size">England ,Europe</div>
+                                </div>
+                                <div class='right-upper-sec'>
+                                    <div class='sm-icon'>
+                                        <a href='#'>
+                                            <div class='facebook common-icon-css'></div>
+                                        </a>
+                                    </div>
+                                    <div class='sm-icon'>
+                                        <a href='#'>
+                                            <div class='instagram common-icon-css'></div>
+                                        </a>
+                                    </div>
+                                    <div class='sm-icon'>
+                                        <a href='#'>
+                                            <div class='linkdein common-icon-css'></div>
+                                        </a>
+                                    </div>
+                                    <div class='sm-icon'>
+                                        <a href='#'>
+                                            <div class='twiter  common-icon-css'></div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-md-7 col-sm-12">
+                        <div class="footer-right-section">
+                            <div class="row">
+                                <div class=" col-lg-4 col-md-4 col-sm-6 ">
+                                    <div class="first-part">
+                                        <div class="text-heading">Acceso rapido</div>
+                                        <div class="text-div">
+                                            <div class="font-size text-padding"><a href="#">Impresoras</a></div>
+                                            <div class="font-size text-padding"><a href="#">Cintas</a></div>
+                                            <div class="font-size text-padding"><a href="#">Kits de</a></div>
+                                            <div class="font-size text-padding"><a href="#">Tarjetas</a></div>
+                                            <div class="font-size text-padding"><a href="#">Accesorios</a></div>
+                                            <div class="font-size text-padding"><a href="#">Pads</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-6 secondd-part">
+                                    <div class="secondd-part">
+                                        <div class="text-heading">Information</div>
+                                        <div class="text-div">
+                                            <div class="font-size text-padding"><a href="#">Impresoras</a></div>
+                                            <div class="font-size text-padding"><a href="#">Cintas</a></div>
+                                            <div class="font-size text-padding"><a href="#">Kits de</a></div>
+                                            <div class="font-size text-padding"><a href="#">Tarjetas Cintas</a></div>
+                                            <div class="font-size text-padding"><a href="#">Accesorios Cintas</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-6">
+                                    <div class="third-part">
+                                        <div class="text-heading">Others-Information</div>
+                                        <div class="text-div">
+                                            <div class="font-size text-padding"><a href="#">Impresoras</a></div>
+                                            <div class="font-size text-padding"><a href="#">Impresoras</a></div>
+                                            <div class="font-size text-padding "><a href="#">Cintas</a></div>
+                                            <div class="font-size text-padding"><a href="#">Kits de</a></div>
+                                            <div class="font-size text-padding"><a href="#">Tarjetas</a></div>
+                                            <div class="font-size text-padding"><a href="#">Tarjetas-Kits de</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lower-section">
+                <div class="container section-width">
+                    <div class="footer-right-txt">
+                        <div class=" font-size">@ 2022 </div>
+                        <div class="font-size-copyright">Company-name</div>
+                        <div class=" font-size-company">CopyRight</div>
+                    </div>
+                    <div class="footer-left-txt">
+                        <div class="logo-size"> <img src="./assets/images/footer/visa-card.png" alt="visa-card" /></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="./assets/js/custom.js"></script>
+
+</body>
+
+</html>

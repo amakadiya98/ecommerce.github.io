@@ -1,0 +1,143 @@
+.profile-page .content-part {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    padding-left: 15px;
+}
+
+.profile-page .content-part .section-title-block {
+    width: 80%;
+}
+
+.content-part .my-profile-block {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    margin-left: 20px;
+}
+.content-part .common-spacing {
+    margin-bottom: 125px;
+}
+.content-part .block-title{
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid var(--green);
+}
+.content-part .block-title h3 {
+    font-size: 18px;
+    font-weight: 500;
+}
+.content-part .details-part {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-top: 10px;
+}
+.content-part .my-profile-block .details-part {
+    margin-left: 10px;
+}
+.my-profile-block .userId-block {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.my-profile-block .userId-block span {
+    font-size: 14px;
+    font-weight: 500;
+}
+.my-profile-block .userId-block h6 {
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 5px;
+    padding-left: 8px;
+}
+.profile-page .content-part .buy-now {
+    display: flex;
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+.profile-page .content-part .buy-now .buy-btn {
+    padding: 10px 0;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 500;
+    color: var(--white);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    background-color: var(--green);
+    transition: background .25s ease-in-out, color .25s ease-in-out, border .25s ease-in-out;
+}
+.profile-page .content-part .buy-now .buy-btn:hover {
+    background-color: #333E48;
+}
+
+.profile-page .change-email-block {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    margin-left: 20px;
+}
+
+.profile-page .content-part .change-email-block .buy-now .buy-btn {
+    background-color: red;
+}
+.profile-page .content-part .change-email-block .buy-now .buy-btn:hover {
+    background-color: #333E48;
+}
+
+.profile-page .content-part .change-email-block .details-part .buy-now .buy-btn {
+    background-color: var(--green);
+}
+.profile-page .content-part .change-email-block .details-part .buy-now .buy-btn:hover {
+    background-color: #333E48;
+}
+
+.profile-page .content-part .change-password-block {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    margin-left: 20px;
+}
+
+@media screen and (max-width: 991px) {
+    .content-part .common-spacing {
+        margin-bottom: 75px;
+    }
+    .content-part .details-part {
+        width: 100%;
+    }
+    .profile-page .content-part .change-email-block .buy-now {
+        width: 100%;
+    }
+    .profile-page .content-part .change-email-block .details-part .buy-now {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .profile-page .content-part {
+        padding: 0;
+    }
+    .content-part .my-profile-block {
+        margin-left: 0;
+    }
+    .content-part .change-email-block {
+        margin-left: 0;
+    }
+    .content-part .change-password-block {
+        margin-left: 0 !important;
+    }
+    .content-part .my-profile-block .details-part {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .profile-page .content-part .change-email-block .buy-now .buy-btn {
+        font-size: 14px;
+    }
+}

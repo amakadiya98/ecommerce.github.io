@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel='stylesheet' href='./assets/css/wizard-printer.css'>
+    <title>Result</title>
+</head>
+
+<body>
+    <!-- header part start here -->
+    <header>
+        <!-- desktop header start here -->
+        <div class="header-part d-none d-lg-block desktop-header">
+            <div class="container">
+                <div class="header-cart-part">
+                    <div class="logo-part">
+                        <img src="./assets/images/logo-lg.png" alt="logo" />
+                    </div>
+                    <div class="search-part">
+                        <form class="d-flex">
+                            <input class="form-control me-2" placeholder="Search" aria-label="Search">
+                            <div class="search-icon">
+                                <img src="./assets/images/search.png" alt="search-icon">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="item-part">
+                        <a href="#">Consumibles</a>
+                        <a href="#">Impresoras</a>
+                    </div>
+                    <div class="left-part">
+                        <div class="image-part">
+                            <img src="./assets/images/free-delivery.png" alt="free-delivery" />
+                        </div>
+                        <div class="text-part">
+                            <p>Remaining to free delivery</p>
+                            <strong>$500.00</strong>
+                        </div>
+                    </div>
+                    <div class="user-cart-part">
+                        <div class="user">
+                            <img src="./assets/images/user.png" alt="user-icon">
+                        </div>
+                        <div class="cart-part">
+                            <div class="cart-icon">
+                                <img src="./assets/images/cart.png" alt="cart-icon">
+                                <div class="cart-no">2</div>
+                            </div>
+                            <h6>258 €</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--mobile header start here  -->
+        <div class="header-mobile d-lg-none">
+            <div class='container'>
+                <div class='header-mobile-top'>
+                    <div class='header-cart-part'>
+                        <div class='logo-part'>
+                            <img src="./assets/images/logo-lg.png" alt="logo" />
+                        </div>
+                    </div>
+                    <div class="user-cart-part">
+                        <div class="search-icon">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent2"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <img src="./assets/images/search.png" alt="search-icon"></button>
+                        </div>
+                        <div class="user">
+                            <img src="./assets/images/user.png" alt="user-icon">
+                        </div>
+                        <div class="cart-part">
+                            <div class="cart-icon">
+                                <img src="./assets/images/cart.png" alt="cart-icon">
+                                <div class="cart-no">2</div>
+                            </div>
+                        </div>
+                    </div>
+                    <nav class='navbar'>
+                        <div class='insider-block'>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                        </div>
+                    </nav>
+                </div>
+                <!-- search box for header -->
+                <div class='collapse navbar-collapse-2' id="navbarSupportedContent2">
+                    <div class='search-box-part'>
+                        <div class='input-part'>
+                            <input type='text' name='search' id='search'>
+                            <label for='search'><img alt='search' src="./assets/images/search.png" /></label>
+                        </div>
+                    </div>
+                </div>
+                <!-- drawer -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="drawer-overlay" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    </div>
+                    <div class='drawer'>
+                        <div class='sidebar-top-part'>
+                            <div class='container-fluid'>
+                                <div class='container-sidebar-insider'>
+                                    <div class="left-part">
+                                        <div class="image-part">
+                                            <img src="./assets/images/free-delivery.png" alt="free-delivery" />
+                                        </div>
+                                        <div class="text-part">
+                                            <p>Remaining to free delivery</p>
+                                            <strong>$500.00</strong>
+                                        </div>
+                                    </div>
+                                    <div class='close-btn-part'>
+                                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#navbarSupportedContent"
+                                            aria-controls="navbarSupportedContent" aria-expanded="false"
+                                            aria-label="Toggle navigation">
+                                            <img src='./assets/images/header/close.png' alt='close-icon'>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='content-part'>
+                            <div class="item-part">
+                                <a href="#">Consumibles</a>
+                                <a href="#">Impresoras</a>
+                            </div>
+                            <div class='customer-details-part'>
+                                <ul class="customer-link-part">
+                                    <li class="customer-link">
+                                        <a href="#" title="my-request">Mis solicitudes <span class="badge">3</span></a>
+                                    </li>
+                                    <li class="customer-link">
+                                        <a href="#" title="communications">Comunicados <span class="badge">3</span></a>
+                                    </li>
+                                    <li class="customer-link">
+                                        <a href="#" title="client-area">Área Cliente</a>
+                                    </li>
+                                    <li class="customer-link">
+                                        <a href="#" title="profile">Roger Pujol</a>
+                                    </li>
+                                    <li class="customer-link">
+                                        <a href="#" title="profile">cerrar sesión</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- main-content part start here -->
+    <main class="wizard-printer-page">
+        <div class='container'>
+            <div class='content-part'>
+                <div class='title-block'>
+                    <h3 class='title-text'>Asistente para comprar una impresora</h3>
+                    <div class='buy-now'>
+                        <button class='buy-btn'>Back</button>
+                    </div>
+                </div>
+                <div class='selected-item-block result-page'>
+                    <div class='label-div'>
+                        <span>Selected:</span>
+                    </div>
+                    <div class='value-div'>
+                        <h5>Impresión a 1 cara</h5>
+                        <h5>Imprimirá de forma muy puntual y de una en una</h5>
+                    </div>
+                </div>
+                <div class='title-block second-title'>
+                    <h3 class='title-text'>Volumen de impresiones</h3>
+                    <div class='buy-now'>
+                        <button class='buy-btn'>Back</button>
+                    </div>
+                </div>
+                <div class='item-part'>
+                    <div class='row cust-row'>
+                        <div class='col-md-3'>
+                            <div class="product">
+                                <a href="./cart.html" class="page-link-part m-0">
+                                    <div class="effect-overlay"></div>
+                                    <a href="">RCT023NAA</a>
+                                    <p>Zenius</p>
+                                    <img src="./assets/images/printer-1.png" class="card-printer" alt="printer">
+                                    <div class="product-price-action">
+                                        <div class="product-price">
+                                            <div class="price-sale"> €1000.00 </div>
+                                        </div>
+                                        <div class="wrapper-two-input">
+                                            <div class='product-input'>
+                                                <input type='text' value="1" class="quantity-input">
+                                                <button class="plus-btn">
+                                                    <img src="./assets/images/product/plus.svg" alt="plus">
+                                                </button>
+                                                <button class="minus-btn">
+                                                    <img src="./assets/images/product/minus.svg" alt="minus">
+                                                </button>
+                                            </div>
+                                            <div class="product-action">
+                                                <button class="btn-add-to-cart">
+                                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="18"
+                                                        height="18" viewBox="0 0 68 64">
+                                                        <path
+                                                            d="M2.24 0.576c3.52-0.704 7.168 0.192 10.24 1.792 2.624 1.344 4.224 4.096 5.056 6.848 0.96 3.008 1.344 6.144 1.92 9.216 0.96 5.056 2.304 10.048 3.072 15.104 0.384 2.048 0.704 4.224 2.112 5.888 1.408 1.6 3.776 1.664 5.824 1.728 5.376 0 10.816-0.256 16.192 0.128 1.344 0.064 2.88 0 3.648-1.344 3.52-5.312 6.464-11.008 9.28-16.768 0.576-1.152 1.28-2.368 2.56-2.816 1.344-0.448 3.008-0.256 4.032 0.768 1.152 1.28 1.344 3.2 0.704 4.736-2.688 5.376-5.184 10.816-8.512 15.872-1.472 2.176-3.008 4.544-5.184 6.144-1.792 1.28-4.096 0.832-6.144 0.768-6.272-0.064-12.544 0.384-18.752 0-4.16-0.32-8.256-2.368-10.624-5.888-1.728-2.752-2.368-6.080-3.008-9.216-1.28-6.784-2.624-13.504-3.904-20.288-0.384-1.6-0.896-3.392-2.304-4.352-2.24-1.6-5.376-0.256-7.552-1.984-1.344-0.96-0.704-2.688-0.832-4.096-0.128-1.216 1.152-1.984 2.176-2.24zM34.432 4.928c-0.064-1.216 1.408-1.536 2.368-1.792 2.048-0.32 4.608-0.384 6.208 1.152 0.448 3.776 0.64 7.616 0.768 11.392 1.92 0.128 3.84-0.256 5.76-0.064 0.704 0.064 1.536 0.512 1.472 1.344-0.32 1.472-1.472 2.56-2.368 3.712-2.688 3.456-5.76 6.528-8.832 9.536-0.448 0.448-1.024 0.704-1.6 0.448-1.216-0.512-1.984-1.728-2.88-2.688-2.112-2.304-4.224-4.544-6.144-6.912-0.96-1.216-2.176-2.24-2.624-3.712-0.256-0.832 0.512-1.6 1.344-1.664 1.92-0.256 3.84 0.128 5.76 0 0.256-3.584 0.384-7.168 0.768-10.752zM25.28 51.584c2.432-0.704 5.184 0 6.784 1.856 2.368 2.624 1.984 7.232-0.96 9.216-3.136 2.304-8.448 1.216-9.92-2.56-1.664-3.328 0.64-7.616 4.096-8.512zM45.376 53.504c2.432-2.88 7.36-2.944 9.856-0.128 2.112 2.304 2.048 6.208-0.064 8.512-1.216 1.28-2.944 2.048-4.672 2.112h-0.128c-1.856-0.064-3.776-0.832-4.928-2.24-2.048-2.304-2.112-6.016-0.064-8.256z">
+                                                        </path>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class='col-md-9'>
+                            <div class="section-title-block">
+                                <h3 class="section-title">Descripción</h3>
+                            </div>
+                            <div class='description-content-block mt-3'>
+                                <div class='text-content-part'>
+                                    <div class='description-text-block'>
+                                        <h6 class="mt-0">Cree sus eficazmente y con el nivel de seguridad más adecuado
+                                        </h6>
+                                        <span class="mb-2">De las tarjetas más sencillas a las más seguras, Primacy 2
+                                            sabe hacerlas todas.</span>
+                                        <span>Personalización gráfica (colores, fotografías, datos personales...),
+                                            codificación de
+                                            las bandas magnéticas, chips con o sin contacto, hologramas, laminacion
+                                            protectora,
+                                            efecto UV... Usted decide el nivel de seguridad que desea aplicar según sus
+                                            necesidades
+                                            específicas.</span>
+                                    </div>
+                                </div>
+                                <div class='description-text-block'>
+                                    <h6>Funciones y ventajas</h6>
+                                    <ul>
+                                        <li>Múltiples funciones de impresión</li>
+                                        <li>Impresión de borde a borde, por una o las dos caras*</li>
+                                        <li>Sublimación del color, transferencia térmica monocroma</li>
+                                        <li>Tecnología de reescritura para las tarjetas reimprimibles</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='row cust-row'>
+                        <div class='col-md-3'>
+                            <div class="product">
+                                <a href="./cart.html" class="page-link-part m-0">
+                                    <div class="effect-overlay"></div>
+                                    <a href="">RCT023NAA</a>
+                                    <p>Zenius</p>
+                                    <img src="./assets/images/printer-1.png" class="card-printer" alt="printer">
+                                    <div class="product-price-action">
+                                        <div class="product-price">
+                                            <div class="price-sale"> €1000.00 </div>
+                                        </div>
+                                        <div class="wrapper-two-input">
+                                            <div class='product-input'>
+                                                <input type='text' value="1" class="quantity-input">
+                                                <button class="plus-btn">
+                                                    <img src="./assets/images/product/plus.svg" alt="plus">
+                                                </button>
+                                                <button class="minus-btn">
+                                                    <img src="./assets/images/product/minus.svg" alt="minus">
+                                                </button>
+                                            </div>
+                                            <div class="product-action">
+                                                <button class="btn-add-to-cart">
+                                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="18"
+                                                        height="18" viewBox="0 0 68 64">
+                                                        <path
+                                                            d="M2.24 0.576c3.52-0.704 7.168 0.192 10.24 1.792 2.624 1.344 4.224 4.096 5.056 6.848 0.96 3.008 1.344 6.144 1.92 9.216 0.96 5.056 2.304 10.048 3.072 15.104 0.384 2.048 0.704 4.224 2.112 5.888 1.408 1.6 3.776 1.664 5.824 1.728 5.376 0 10.816-0.256 16.192 0.128 1.344 0.064 2.88 0 3.648-1.344 3.52-5.312 6.464-11.008 9.28-16.768 0.576-1.152 1.28-2.368 2.56-2.816 1.344-0.448 3.008-0.256 4.032 0.768 1.152 1.28 1.344 3.2 0.704 4.736-2.688 5.376-5.184 10.816-8.512 15.872-1.472 2.176-3.008 4.544-5.184 6.144-1.792 1.28-4.096 0.832-6.144 0.768-6.272-0.064-12.544 0.384-18.752 0-4.16-0.32-8.256-2.368-10.624-5.888-1.728-2.752-2.368-6.080-3.008-9.216-1.28-6.784-2.624-13.504-3.904-20.288-0.384-1.6-0.896-3.392-2.304-4.352-2.24-1.6-5.376-0.256-7.552-1.984-1.344-0.96-0.704-2.688-0.832-4.096-0.128-1.216 1.152-1.984 2.176-2.24zM34.432 4.928c-0.064-1.216 1.408-1.536 2.368-1.792 2.048-0.32 4.608-0.384 6.208 1.152 0.448 3.776 0.64 7.616 0.768 11.392 1.92 0.128 3.84-0.256 5.76-0.064 0.704 0.064 1.536 0.512 1.472 1.344-0.32 1.472-1.472 2.56-2.368 3.712-2.688 3.456-5.76 6.528-8.832 9.536-0.448 0.448-1.024 0.704-1.6 0.448-1.216-0.512-1.984-1.728-2.88-2.688-2.112-2.304-4.224-4.544-6.144-6.912-0.96-1.216-2.176-2.24-2.624-3.712-0.256-0.832 0.512-1.6 1.344-1.664 1.92-0.256 3.84 0.128 5.76 0 0.256-3.584 0.384-7.168 0.768-10.752zM25.28 51.584c2.432-0.704 5.184 0 6.784 1.856 2.368 2.624 1.984 7.232-0.96 9.216-3.136 2.304-8.448 1.216-9.92-2.56-1.664-3.328 0.64-7.616 4.096-8.512zM45.376 53.504c2.432-2.88 7.36-2.944 9.856-0.128 2.112 2.304 2.048 6.208-0.064 8.512-1.216 1.28-2.944 2.048-4.672 2.112h-0.128c-1.856-0.064-3.776-0.832-4.928-2.24-2.048-2.304-2.112-6.016-0.064-8.256z">
+                                                        </path>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class='col-md-9'>
+                            <div class="section-title-block">
+                                <h3 class="section-title">Descripción</h3>
+                            </div>
+                            <div class='description-content-block mt-3'>
+                                <div class='text-content-part'>
+                                    <div class='description-text-block'>
+                                        <h6 class="mt-0">Cree sus eficazmente y con el nivel de seguridad más adecuado
+                                        </h6>
+                                        <span class="mb-2">De las tarjetas más sencillas a las más seguras, Primacy 2
+                                            sabe hacerlas todas.</span>
+                                        <span>Personalización gráfica (colores, fotografías, datos personales...),
+                                            codificación de
+                                            las bandas magnéticas, chips con o sin contacto, hologramas, laminacion
+                                            protectora,
+                                            efecto UV... Usted decide el nivel de seguridad que desea aplicar según sus
+                                            necesidades
+                                            específicas.</span>
+                                    </div>
+                                </div>
+                                <div class='description-text-block'>
+                                    <h6>Funciones y ventajas</h6>
+                                    <ul>
+                                        <li>Múltiples funciones de impresión</li>
+                                        <li>Impresión de borde a borde, por una o las dos caras*</li>
+                                        <li>Sublimación del color, transferencia térmica monocroma</li>
+                                        <li>Tecnología de reescritura para las tarjetas reimprimibles</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- footer start here -->
+    <footer class="footer-part">
+        <div class="footer-head newsletter-part">
+            <div class="container">
+                <div class="row">Somos distribuidor autorizado de Evolis, epsecializado en impresoras de tarjetas de PVC
+                </div>
+            </div>
+        </div>
+        <div class="content-part">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-md-5 col-sm-12">
+                        <div class="footer-left-section">
+                            <div class="logo-size">
+                                <img src="./assets/images/logo-lg.png" alt="logo">
+                            </div>
+                            <div class="right-part-helpline">
+                                <div class="right-part-helpline-content">
+                                    <img src="./assets/images/footer/helpline-icon.png" alt="helpline-logo" />
+                                    <div class="contact-no-css">
+                                        <div class="font-size">Contact-Information</div>
+                                        <div class="font-size-contact-no"><a href="">(+34)616 43 28 05</a></div>
+                                    </div>
+
+                                </div>
+                                <div>
+                                    <div class="font-size-location">Location</div>
+                                    <div class="font-size">England ,Europe</div>
+                                </div>
+                                <div class='right-upper-sec'>
+                                    <div class='sm-icon'>
+                                        <a href='#'>
+                                            <div class='facebook common-icon-css'></div>
+                                        </a>
+                                    </div>
+                                    <div class='sm-icon'>
+                                        <a href='#'>
+                                            <div class='instagram common-icon-css'></div>
+                                        </a>
+                                    </div>
+                                    <div class='sm-icon'>
+                                        <a href='#'>
+                                            <div class='linkdein common-icon-css'></div>
+                                        </a>
+                                    </div>
+                                    <div class='sm-icon'>
+                                        <a href='#'>
+                                            <div class='twiter  common-icon-css'></div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-md-7 col-sm-12">
+                        <div class="footer-right-section">
+                            <div class="row">
+                                <div class=" col-lg-4 col-md-4 col-sm-6 ">
+                                    <div class="first-part">
+                                        <div class="text-heading">Acceso rapido</div>
+                                        <div class="text-div">
+                                            <div class="font-size text-padding"><a href="#">Impresoras</a></div>
+                                            <div class="font-size text-padding"><a href="#">Cintas</a></div>
+                                            <div class="font-size text-padding"><a href="#">Kits de</a></div>
+                                            <div class="font-size text-padding"><a href="#">Tarjetas</a></div>
+                                            <div class="font-size text-padding"><a href="#">Accesorios</a></div>
+                                            <div class="font-size text-padding"><a href="#">Pads</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-6 secondd-part">
+                                    <div class="secondd-part">
+                                        <div class="text-heading">Information</div>
+                                        <div class="text-div">
+                                            <div class="font-size text-padding"><a href="#">Impresoras</a></div>
+                                            <div class="font-size text-padding"><a href="#">Cintas</a></div>
+                                            <div class="font-size text-padding"><a href="#">Kits de</a></div>
+                                            <div class="font-size text-padding"><a href="#">Tarjetas Cintas</a></div>
+                                            <div class="font-size text-padding"><a href="#">Accesorios Cintas</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-6">
+                                    <div class="third-part">
+                                        <div class="text-heading">Others-Information</div>
+                                        <div class="text-div">
+                                            <div class="font-size text-padding"><a href="#">Impresoras</a></div>
+                                            <div class="font-size text-padding"><a href="#">Impresoras</a></div>
+                                            <div class="font-size text-padding "><a href="#">Cintas</a></div>
+                                            <div class="font-size text-padding"><a href="#">Kits de</a></div>
+                                            <div class="font-size text-padding"><a href="#">Tarjetas</a></div>
+                                            <div class="font-size text-padding"><a href="#">Tarjetas-Kits de</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lower-section">
+                <div class="container section-width">
+                    <div class="footer-right-txt">
+                        <div class=" font-size">@ 2022 </div>
+                        <div class="font-size-copyright">Company-name</div>
+                        <div class=" font-size-company">CopyRight</div>
+                    </div>
+                    <div class="footer-left-txt">
+                        <div class="logo-size"> <img src="./assets/images/footer/visa-card.png" alt="visa-card" /></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="./assets/js/custom.js"></script>
+</body>
+
+</html>

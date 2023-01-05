@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel='stylesheet' href='./assets/css/area-customer-budget.css'>
+    <title>Area-Customer-Budget</title>
+</head>
+
+<body>
+    <!-- header part start here -->
+    <header>
+        <!-- desktop header start here -->
+        <div class="header-part d-none d-lg-block desktop-header">
+            <div class="container">
+                <div class="header-cart-part">
+                    <div class="logo-part">
+                        <img src="./assets/images/logo-lg.png" alt="logo" />
+                    </div>
+                    <div class="search-part">
+                        <form class="d-flex">
+                            <input class="form-control me-2" placeholder="Search" aria-label="Search">
+                            <div class="search-icon">
+                                <img src="./assets/images/search.png" alt="search-icon">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="item-part">
+                        <a href="#">Consumibles</a>
+                        <a href="#">Impresoras</a>
+                    </div>
+                    <div class="left-part">
+                        <div class="image-part">
+                            <img src="./assets/images/free-delivery.png" alt="free-delivery" />
+                        </div>
+                        <div class="text-part">
+                            <p>Remaining to free delivery</p>
+                            <strong>$500.00</strong>
+                        </div>
+                    </div>
+                    <div class="user-cart-part">
+                        <div class="user">
+                            <img src="./assets/images/user.png" alt="user-icon">
+                        </div>
+                        <div class="cart-part">
+                            <div class="cart-icon">
+                                <img src="./assets/images/cart.png" alt="cart-icon">
+                                <div class="cart-no">2</div>
+                            </div>
+                            <h6>258 €</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- dropdown and logout part -->
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <div class='container-insider'>
+                        <div class="drop-down-part">
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Picturescard.com / GaolasGlobal projects (2)
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">ADISEC S.A.</a></li>
+                                    <li><a class="dropdown-item" href="#"> Picturescard.com / GaolasGlobal projects </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 customer-link-part">
+                                <li class="customer-link">
+                                    <a href="#" title="my-request">Mis solicitudes <span class="badge">3</span></a>
+                                </li>
+                                <li class="customer-link">
+                                    <a href="#" title="communications">Comunicados <span class="badge">3</span></a>
+                                </li>
+                                <li class="customer-link">
+                                    <a href="#" title="client-area">Área Cliente</a>
+                                </li>
+                                <li class="customer-link">
+                                    <a href="#" title="profile">Roger Pujol</a>
+                                </li>
+                                <li class="customer-link">
+                                    <img src="./assets/images/header/logout.png" alt="logout" class="logout-icon">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!--mobile header start here  -->
+        <div class="header-mobile d-lg-none">
+            <div class='container'>
+                <div class='header-mobile-top'>
+                    <div class='header-cart-part'>
+                        <div class='logo-part'>
+                            <img src="./assets/images/logo-lg.png" alt="logo" />
+                        </div>
+                    </div>
+                    <div class="user-cart-part">
+                        <div class="search-icon">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent2"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <img src="./assets/images/search.png" alt="search-icon"></button>
+                        </div>
+                        <div class="user">
+                            <img src="./assets/images/user.png" alt="user-icon">
+                        </div>
+                        <div class="cart-part">
+                            <div class="cart-icon">
+                                <img src="./assets/images/cart.png" alt="cart-icon">
+                                <div class="cart-no">2</div>
+                            </div>
+                        </div>
+                    </div>
+                    <nav class='navbar'>
+                        <div class='insider-block'>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                        </div>
+                    </nav>
+                </div>
+                <!-- search box for header -->
+                <div class='collapse navbar-collapse-2' id="navbarSupportedContent2">
+                    <div class='search-box-part'>
+                        <div class='input-part'>
+                            <input type='text' name='search' id='search'>
+                            <label for='search'><img alt='search' src="./assets/images/search.png" /></label>
+                        </div>
+                    </div>
+                </div>
+                <!-- drawer -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="drawer-overlay" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    </div>
+                    <div class='drawer'>
+                        <div class='sidebar-top-part'>
+                            <div class='container-fluid'>
+                                <div class='container-sidebar-insider'>
+                                    <div class="left-part">
+                                        <div class="image-part">
+                                            <img src="./assets/images/free-delivery.png" alt="free-delivery" />
+                                        </div>
+                                        <div class="text-part">
+                                            <p>Remaining to free delivery</p>
+                                            <strong>$500.00</strong>
+                                        </div>
+                                    </div>
+                                    <div class='close-btn-part'>
+                                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#navbarSupportedContent"
+                                            aria-controls="navbarSupportedContent" aria-expanded="false"
+                                            aria-label="Toggle navigation">
+                                            <img src='./assets/images/header/close.png' alt='close-icon'>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='content-part'>
+                            <div class="item-part">
+                                <a href="#">Consumibles</a>
+                                <a href="#">Impresoras</a>
+                            </div>
+                            <div class='customer-details-part'>
+                                <ul class="customer-link-part">
+                                    <li class="customer-link">
+                                        <a href="#" title="my-request">Mis solicitudes <span class="badge">3</span></a>
+                                    </li>
+                                    <li class="customer-link">
+                                        <a href="#" title="communications">Comunicados <span class="badge">3</span></a>
+                                    </li>
+                                    <li class="customer-link">
+                                        <a href="#" title="client-area">Área Cliente</a>
+                                    </li>
+                                    <li class="customer-link">
+                                        <a href="#" title="profile">Roger Pujol</a>
+                                    </li>
+                                    <li class="customer-link">
+                                        <a href="#" title="profile">cerrar sesión</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- dropdown ad logout party -->
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <div class='container-insider'>
+                        <div class="drop-down-part">
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Picturescard.com / GaolasGlobal projects (2)
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">ADISEC S.A.</a></li>
+                                    <li><a class="dropdown-item" href="#"> Picturescard.com / GaolasGlobal projects </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- main-content part start here -->
+    <main class="area-customer-page">
+        <div class='container'>
+            <div class='card-printer-section'>
+                <div class='row'>
+                    <div class='col-lg-3 col-md-4'>
+                        <div class="category-part left-part">
+                            <div class="cat-card card-1">
+                                <div class="section-title-block">
+                                    <h3 class="section-title bold-text mb-5">Área privada
+                                        <ul class="breadcrumb-list">
+                                            <li class="breadcrumb-item">
+                                                <a href="#">
+                                                    <span><img src='./assets/images/customer/home.png'
+                                                            alt='home'></span>
+                                                </a>
+                                            </li>
+                                            <li class="breadcrumb-icon">
+                                                <svg class="svg-anlge-right" width="10" height="18" viewBox="0 0 10 18"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M9.69217 8.35754L1.59765 0.265714C1.24247 -0.0885713 0.667021 -0.0885713 0.310942 0.265714C-0.0442398 0.619999 -0.0442398 1.19545 0.310942 1.54974L7.76341 8.99951L0.311839 16.4493C-0.0433428 16.8036 -0.0433428 17.379 0.311839 17.7342C0.667021 18.0885 1.24337 18.0885 1.59855 17.7342L9.69307 9.64238C10.0429 9.29176 10.0429 8.70727 9.69217 8.35754Z"
+                                                        fill="currentColor"></path>
+                                                </svg>
+                                            </li>
+                                            <li class="breadcrumb-item">
+                                                <a href="">
+                                                    <span>Área privada</span>
+                                                </a>
+                                            </li>
+
+                                        </ul>
+                                    </h3>
+
+                                </div>
+                                <div class='content-link-part'>
+                                    <div class='link-title-block'>
+                                        <h5 class="link-heading">Mis presupuestos</h5>
+                                    </div>
+                                    <div class='link-item-part'>
+                                        <a href='#'><span class="link-item">Pendientes (2)</span></a>
+                                        <a href="#"><span class="link-item">Historial</span></a>
+                                    </div>
+                                </div>
+                                <div class='content-link-part mt-4'>
+                                    <div class='link-title-block'>
+                                        <h5 class="link-heading">Mis pedidos</h5>
+                                    </div>
+                                    <div class='link-item-part'>
+                                        <a href='#'><span class="link-item">Pendientes de pago (1)</span></a>
+                                        <a href="#"><span class="link-item">Por recibir (2)</span></a>
+                                        <a href="#"><span class="link-item">Historial</span></a>
+                                    </div>
+                                </div>
+                                <div class='content-link-part mt-4'>
+                                    <div class='link-title-block'>
+                                        <h5 class="link-heading">Mis facturas</h5>
+                                    </div>
+                                    <div class='link-item-part'>
+                                        <a href="#"><span class="link-item">Facturas</span></a>
+                                        <a href="#"><span class="link-item">Pagos atrasados (1)</span></a>
+                                        <a href="#"><span class="link-item">Próximos pagos (4)</span></a>
+                                    </div>
+                                </div>
+                                <div class='content-link-part mt-4'>
+                                    <div class='link-title-block'>
+                                        <h5 class="link-heading">Mis datos</h5>
+                                    </div>
+                                    <div class='link-item-part'>
+                                        <a href="#"><span class="link-item">Mis datos</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-lg-9 col-md-8'>
+                        <div class='filter-part'>
+                            <div class="section-title-block">
+                                <h3 class="section-title mb-5">Buscador</h3>
+                            </div>
+                            <div class='filter-block-part'>
+                                <div class='row line-1'>
+                                    <div class='col-lg-4'>
+                                        <div class='filter-block'>
+                                            <div class='title-part'>
+                                                <span>Año</span>
+                                            </div>
+                                            <div class='input-part'>
+                                                <input type='text' name='ph-no' id='ph-no' />
+                                            </div>
+                                            <div class='search-part'>
+                                                <button><img src='./assets/images/search.png'
+                                                        alt='search-icon'></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class='col-lg-4'>
+                                        <div class='filter-block'>
+                                            <div class='title-part'>
+                                                <span>Año</span>
+                                            </div>
+                                            <div class='input-part'>
+                                                <input type='text' name='ph-no' id='ph-no' />
+                                            </div>
+                                            <div class='search-part'>
+                                                <button><img src='./assets/images/search.png'
+                                                        alt='search-icon'></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class='col-lg-4'>
+                                        <div class='filter-block'>
+                                            <div class='title-part'>
+                                                <span>Año</span>
+                                            </div>
+                                            <div class='input-part'>
+                                                <input type='text' name='ph-no' id='ph-no' />
+                                            </div>
+                                            <div class='search-part'>
+                                                <button><img src='./assets/images/search.png'
+                                                        alt='search-icon'></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class='row line-1'>
+                                    <div class='col-lg-4'>
+                                        <div class='filter-block'>
+                                            <div class='title-part'>
+                                                <span>Año</span>
+                                            </div>
+                                            <div class='input-part'>
+                                                <input type='text' name='ph-no' id='ph-no' />
+                                            </div>
+                                            <div class='search-part'>
+                                                <button><img src='./assets/images/search.png'
+                                                        alt='search-icon'></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class='col-lg-4'>
+                                        <div class='filter-block'>
+                                            <div class='title-part'>
+                                                <span>Año</span>
+                                            </div>
+                                            <div class='input-part'>
+                                                <input type='text' name='ph-no' id='ph-no' />
+                                            </div>
+                                            <div class='search-part'>
+                                                <button><img src='./assets/images/search.png'
+                                                        alt='search-icon'></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class='col-lg-4'>
+                                        <div class='filter-block'>
+                                            <div class='title-part'>
+                                                <span>Año</span>
+                                            </div>
+                                            <div class='input-part'>
+                                                <input type='text' name='ph-no' id='ph-no' />
+                                            </div>
+                                            <div class='search-part'>
+                                                <button><img src='./assets/images/search.png'
+                                                        alt='search-icon'></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class='row'>
+                                    <div class='col-lg-4'>
+                                        <div class='filter-block'>
+                                            <div class='title-part'>
+                                                <span>Año</span>
+                                            </div>
+                                            <div class='input-part'>
+                                                <div class="dropdown">
+                                                    <button class="btn dropdown-toggle" type="button"
+                                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                                        2022
+                                                    </button>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="#">España</a></li>
+                                                        <li><a class="dropdown-item" href="#">Inglaterra</a>
+                                                        </li>
+                                                        <li><a class="dropdown-item" href="#">Nueva Zelanda</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class='search-part'>
+                                                <button><img src='./assets/images/search.png'
+                                                        alt='search-icon'></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class='col-lg-4'>
+                                        <div class='filter-block'>
+                                            <div class='title-part'>
+                                                <span>Mes</span>
+                                            </div>
+                                            <div class='input-part'>
+                                                <div class="dropdown">
+                                                    <button class="btn dropdown-toggle" type="button"
+                                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                                        Noviembre
+                                                    </button>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="#">España</a></li>
+                                                        <li><a class="dropdown-item" href="#">Inglaterra</a>
+                                                        </li>
+                                                        <li><a class="dropdown-item" href="#">Nueva Zelanda</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class='search-part'>
+                                                <button><img src='./assets/images/search.png'
+                                                        alt='search-icon'></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class='col-lg-4'>
+                                        <div class='filter-block'>
+                                            <div class='title-part'>
+                                                <span>N° Factura</span>
+                                            </div>
+                                            <div class='input-part'>
+                                                <div class="dropdown">
+                                                    <button class="btn dropdown-toggle" type="button"
+                                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                                        N° de factura
+                                                    </button>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="#">España</a></li>
+                                                        <li><a class="dropdown-item" href="#">Inglaterra</a>
+                                                        </li>
+                                                        <li><a class="dropdown-item" href="#">Nueva Zelanda</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class='search-part'>
+                                                <button><img src='./assets/images/search.png'
+                                                        alt='search-icon'></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       
+                        <div class='heading-block'>
+                            <div class="section-title-block">
+                                <h3 class="section-title mb-5">Resultado de la búsqueda</h3>
+                            </div>
+                        </div>
+                        <div class='table-block'>
+                            <div class='table-responsive'>
+                                <table class="table table-bordered table-striped table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>N</th>
+                                            <th>Fecha</th>
+                                            <th><i class="fa fa-eraser"></i></th>
+                                            <th>Cliente</th>
+                                            <th>Tipo</th>
+                                            <th>Breve</th>
+                                            <th>Agente</th>
+                                            <th><i class="fa fa-folder-o"></i></th>
+                                            <th><i class="fa fa-print"></i></th>
+                                            <th><i class="fa fa-send"></i></th>
+                                            <th>Total</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="single-row">
+                                            <td colspan="11" class="singleColOnRow">Febrero 2022</td>
+                                        </tr>
+                                        <tr data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                            <td class="align-center">
+                                                <a href="#">2828</a>
+                                            </td>
+                                            <td class="align-center">30/11/22<span class="ms-2">09:58</span></td>
+                                            <td class="align-center"></td>
+                                            <td>
+                                                <p>TR3SB-Tintoreia<a href="#" class="ms-2">173</a></p>
+                                                <small>Rosello 185, local 2 - BARCELONA</small>
+                                            </td>
+                                            <td>presupuestos</td>
+                                            <td>Accion comercial</td>
+                                            <td>Monste Valbuena</td>
+                                            <td class="align-center"><i class="fa fa-folder-o"></i></td>
+                                            <td class="align-center"><i class="fa fa-print"></i></td>
+                                            <td class="align-center">1</td>
+                                            <td class="price">641,28 €</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="align-center">
+                                                <a href="#">2823</a>
+                                            </td>
+                                            <td class="align-center">29/11/22<span class="ms-2">09:34</span></td>
+                                            <td class="align-center"><i class="fa fa-check"></i></td>
+                                            <td>
+                                                <p>Rius - Tintoreia<a href="#" class="ms-2">349</a></p>
+                                                <small>Florida Blanca 136 BARCELONA</small>
+                                            </td>
+                                            <td>presupuestos</td>
+                                            <td>Planxa de ma</td>
+                                            <td></td>
+                                            <td class="align-center"><i class="fa fa-folder-o deactive"></i></td>
+                                            <td class="align-center"><i class="fa fa-print"></i></td>
+                                            <td class="align-center">0</td>
+                                            <td class="price">641,28 €</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="align-center">
+                                                <a href="#">2828</a>
+                                            </td>
+                                            <td class="align-center">30/11/22<span class="ms-2">09:58</span></td>
+                                            <td class="align-center"></td>
+                                            <td>
+                                                <p>TR3SB-Tintoreia<a href="#" class="ms-2">173</a></p>
+                                                <small>Rosello 185, local 2 - BARCELONA</small>
+                                            </td>
+                                            <td>presupuestos</td>
+                                            <td>Accion comercial</td>
+                                            <td>Monste Valbuena</td>
+                                            <td class="align-center"><i class="fa fa-folder-o"></i></td>
+                                            <td class="align-center"><i class="fa fa-print"></i></td>
+                                            <td class="align-center">1</td>
+                                            <td class="price">641,28 €</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="align-center">
+                                                <a href="#">2823</a>
+                                            </td>
+                                            <td class="align-center">29/11/22<span class="ms-2">09:34</span></td>
+                                            <td class="align-center"><i class="fa fa-check"></i></td>
+                                            <td>
+                                                <p>Rius - Tintoreia<a href="#" class="ms-2">349</a></p>
+                                                <small>Florida Blanca 136 BARCELONA</small>
+                                            </td>
+                                            <td>presupuestos</td>
+                                            <td>Planxa de ma</td>
+                                            <td></td>
+                                            <td class="align-center"><i class="fa fa-folder-o deactive"></i></td>
+                                            <td class="align-center"><i class="fa fa-print"></i></td>
+                                            <td class="align-center">0</td>
+                                            <td class="price">641,28 €</td>
+                                        </tr>
+                                        <tr class="single-row">
+                                            <td colspan="11" class="singleColOnRow">Febrero 2022</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="align-center">
+                                                <a href="#">2828</a>
+                                            </td>
+                                            <td class="align-center">30/11/22<span class="ms-2">09:58</span></td>
+                                            <td class="align-center"></td>
+                                            <td>
+                                                <p>TR3SB-Tintoreia<a href="#" class="ms-2">173</a></p>
+                                                <small>Rosello 185, local 2 - BARCELONA</small>
+                                            </td>
+                                            <td>presupuestos</td>
+                                            <td>Accion comercial</td>
+                                            <td>Monste Valbuena</td>
+                                            <td class="align-center"><i class="fa fa-folder-o"></i></td>
+                                            <td class="align-center"><i class="fa fa-print"></i></td>
+                                            <td class="align-center">1</td>
+                                            <td class="price">641,28 €</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="align-center">
+                                                <a href="#">2823</a>
+                                            </td>
+                                            <td class="align-center">29/11/22<span class="ms-2">09:34</span></td>
+                                            <td class="align-center"><i class="fa fa-check"></i></td>
+                                            <td>
+                                                <p>Rius - Tintoreia<a href="#" class="ms-2">349</a></p>
+                                                <small>Florida Blanca 136 BARCELONA</small>
+                                            </td>
+                                            <td>presupuestos</td>
+                                            <td>Planxa de ma</td>
+                                            <td></td>
+                                            <td class="align-center"><i class="fa fa-folder-o deactive"></i></td>
+                                            <td class="align-center"><i class="fa fa-print"></i></td>
+                                            <td class="align-center">0</td>
+                                            <td class="price">641,28 €</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="align-center">
+                                                <a href="#">2828</a>
+                                            </td>
+                                            <td class="align-center">30/11/22<span class="ms-2">09:58</span></td>
+                                            <td class="align-center"></td>
+                                            <td>
+                                                <p>TR3SB-Tintoreia<a href="#" class="ms-2">173</a></p>
+                                                <small>Rosello 185, local 2 - BARCELONA</small>
+                                            </td>
+                                            <td>presupuestos</td>
+                                            <td>Accion comercial</td>
+                                            <td>Monste Valbuena</td>
+                                            <td class="align-center"><i class="fa fa-folder-o"></i></td>
+                                            <td class="align-center"><i class="fa fa-print"></i></td>
+                                            <td class="align-center">1</td>
+                                            <td class="price">641,28 €</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="align-center">
+                                                <a href="#">2823</a>
+                                            </td>
+                                            <td class="align-center">29/11/22<span class="ms-2">09:34</span></td>
+                                            <td class="align-center"><i class="fa fa-check"></i></td>
+                                            <td>
+                                                <p>Rius - Tintoreia<a href="#" class="ms-2">349</a></p>
+                                                <small>Florida Blanca 136 BARCELONA</small>
+                                            </td>
+                                            <td>presupuestos</td>
+                                            <td>Planxa de ma</td>
+                                            <td></td>
+                                            <td class="align-center"><i class="fa fa-folder-o deactive"></i></td>
+                                            <td class="align-center"><i class="fa fa-print"></i></td>
+                                            <td class="align-center">0</td>
+                                            <td class="price">641,28 €</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+                        <div class='pagination-block'>
+                            <div class='page-no'>
+                                <nav aria-label="Page navigation example">
+                                    <ul class="pagination">
+                                      <li class="page-item"><a class="page-link cus-active" href="#">1</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">6</a></li>
+                                      <li class="page-item"><a class="page-link no-style" href="#">...</a></li>
+                                      <li class="page-item"><a class="page-link" href="#"><svg class="svg-anlge-right" width="10" height="10" viewBox="0 0 10 18"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9.69217 8.35754L1.59765 0.265714C1.24247 -0.0885713 0.667021 -0.0885713 0.310942 0.265714C-0.0442398 0.619999 -0.0442398 1.19545 0.310942 1.54974L7.76341 8.99951L0.311839 16.4493C-0.0433428 16.8036 -0.0433428 17.379 0.311839 17.7342C0.667021 18.0885 1.24337 18.0885 1.59855 17.7342L9.69307 9.64238C10.0429 9.29176 10.0429 8.70727 9.69217 8.35754Z"
+                                            fill="currentColor"></path>
+                                    </svg></a></li>
+                                    </ul>
+                                  </nav>
+                            </div>
+                            <div class='total-no'>
+                                <button><img src='./assets/images/customer/left-two-arrow.png'
+                                        alt='left-two-arrow'></button>
+                                <span class="label-span">Total:</span>
+                                <span class="count-span">4</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- footer start here -->
+    <footer class="footer-part">
+        <div class="footer-head newsletter-part">
+            <div class="container">
+                <div class="row">Somos distribuidor autorizado de Evolis, epsecializado en impresoras de tarjetas de PVC
+                </div>
+            </div>
+        </div>
+        <div class="content-part">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-md-5 col-sm-12">
+                        <div class="footer-left-section">
+                            <div class="logo-size">
+                                <img src="./assets/images/logo-lg.png" alt="logo">
+                            </div>
+                            <div class="right-part-helpline">
+                                <div class="right-part-helpline-content">
+                                    <img src="./assets/images/footer/helpline-icon.png" alt="helpline-logo" />
+                                    <div class="contact-no-css">
+                                        <div class="font-size">Contact-Information</div>
+                                        <div class="font-size-contact-no"><a href="">(+34)616 43 28 05</a></div>
+                                    </div>
+
+                                </div>
+                                <div>
+                                    <div class="font-size-location">Location</div>
+                                    <div class="font-size">England ,Europe</div>
+                                </div>
+                                <div class='right-upper-sec'>
+                                    <div class='sm-icon'>
+                                        <a href='#'>
+                                            <div class='facebook common-icon-css'></div>
+                                        </a>
+                                    </div>
+                                    <div class='sm-icon'>
+                                        <a href='#'>
+                                            <div class='instagram common-icon-css'></div>
+                                        </a>
+                                    </div>
+                                    <div class='sm-icon'>
+                                        <a href='#'>
+                                            <div class='linkdein common-icon-css'></div>
+                                        </a>
+                                    </div>
+                                    <div class='sm-icon'>
+                                        <a href='#'>
+                                            <div class='twiter  common-icon-css'></div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-md-7 col-sm-12">
+                        <div class="footer-right-section">
+                            <div class="row">
+                                <div class=" col-lg-4 col-md-4 col-sm-6 ">
+                                    <div class="first-part">
+                                        <div class="text-heading">Acceso rapido</div>
+                                        <div class="text-div">
+                                            <div class="font-size text-padding"><a href="#">Impresoras</a></div>
+                                            <div class="font-size text-padding"><a href="#">Cintas</a></div>
+                                            <div class="font-size text-padding"><a href="#">Kits de</a></div>
+                                            <div class="font-size text-padding"><a href="#">Tarjetas</a></div>
+                                            <div class="font-size text-padding"><a href="#">Accesorios</a></div>
+                                            <div class="font-size text-padding"><a href="#">Pads</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-6 secondd-part">
+                                    <div class="secondd-part">
+                                        <div class="text-heading">Information</div>
+                                        <div class="text-div">
+                                            <div class="font-size text-padding"><a href="#">Impresoras</a></div>
+                                            <div class="font-size text-padding"><a href="#">Cintas</a></div>
+                                            <div class="font-size text-padding"><a href="#">Kits de</a></div>
+                                            <div class="font-size text-padding"><a href="#">Tarjetas Cintas</a></div>
+                                            <div class="font-size text-padding"><a href="#">Accesorios Cintas</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-6">
+                                    <div class="third-part">
+                                        <div class="text-heading">Others-Information</div>
+                                        <div class="text-div">
+                                            <div class="font-size text-padding"><a href="#">Impresoras</a></div>
+                                            <div class="font-size text-padding"><a href="#">Impresoras</a></div>
+                                            <div class="font-size text-padding "><a href="#">Cintas</a></div>
+                                            <div class="font-size text-padding"><a href="#">Kits de</a></div>
+                                            <div class="font-size text-padding"><a href="#">Tarjetas</a></div>
+                                            <div class="font-size text-padding"><a href="#">Tarjetas-Kits de</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lower-section">
+                <div class="container section-width">
+                    <div class="footer-right-txt">
+                        <div class=" font-size">@ 2022 </div>
+                        <div class="font-size-copyright">Company-name</div>
+                        <div class=" font-size-company">CopyRight</div>
+                    </div>
+                    <div class="footer-left-txt">
+                        <div class="logo-size"> <img src="./assets/images/footer/visa-card.png" alt="visa-card" /></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <div class="modal shipping-address-modal fade" id="exampleModal" tabindex="-1"
+    aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Rechazar presupuesto</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h5 class="modal-heading-text">Rechazar presupuesto</h5>
+                <div class="modal-body-content">
+                    <div class="country mb-3">
+                        <label class="font-weight-bold mt-2" for=''>Indique el motivo del rechazo</label>
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Seleccionar motivo
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">España</a></li>
+                                <li><a class="dropdown-item" href="#">Inglaterra</a></li>
+                                <li><a class="dropdown-item" href="#">Nueva Zelanda</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class='input-group'>
+                        <label for='observation'>Puedge anadir un breve comentario para ayudarnos a mejorar nuestro servicio</label>
+                        <textarea name='observation' id='observation' cols='25' rows='4'></textarea>
+                    </div>
+                </div>
+                <div class='buy-now mt-3'>
+                    <button class="buy-btn">Usar esta dirección</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/custom.js"></script>
+</body>
+
+</html>

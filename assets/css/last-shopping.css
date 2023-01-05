@@ -1,0 +1,72 @@
+.lastShopping-page .content-part{
+    padding-top: 40px;
+}
+
+.lastShopping-page .content-part .section-title-block {
+    margin-bottom: 15px;
+}
+.lastShopping-page .content-part .section-title-block::after {
+    bottom: 0;
+}
+.lastShopping-page .content-part .section-title-block .section-title::after {
+    bottom: -9px;
+}
+.lastShopping-page .product-block .cart-product-information {
+    width: 100%;
+}
+.monthly-block .block-title {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: lightgray;
+    border-radius: 3px;
+    padding: 5px 0;
+    padding-left: 20px;
+    margin-bottom: 12px;
+}
+
+.monthly-block .block-title h5 {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;  
+}
+
+.product-action .btn-add-to-cart {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: #e6e6e6;
+    color: var(--white);
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.product-block:hover .product-action .btn-add-to-cart {
+    background-color: var(--green);
+    transition: 0.5s ease;
+}
+
+.product-action .btn-add-to-cart svg {
+    color: currentColor;
+}
+
+.product-action .btn-add-to-cart svg path {
+    fill: currentColor;
+}
+
+.action-part {
+    width: 50%;
+    margin: auto;
+    padding-bottom: 40px;
+}
+
+@media screen and (max-width: 320px) {
+    .lastShopping-page .card-printer-section .content-part .product-block .image-part {
+        padding: 10px 0;
+    }
+}
